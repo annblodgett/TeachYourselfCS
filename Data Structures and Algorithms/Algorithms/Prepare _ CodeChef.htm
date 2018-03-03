@@ -1,0 +1,1975 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)https://www.codechef.com/certification/prepare#expert -->
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en" dir="ltr" class="js gr__codechef_com"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- Errorception -->
+        <script src="./Prepare _ CodeChef_files/4e7c8fce06a9ab05530008e5.js" async=""></script><script type="text/javascript" async="" src="./Prepare _ CodeChef_files/insight.min.js"></script><script type="text/javascript" async="" src="./Prepare _ CodeChef_files/insight.min.js"></script><script type="text/javascript" async="" src="./Prepare _ CodeChef_files/atrk.js"></script><script type="text/javascript" async="" src="./Prepare _ CodeChef_files/ga.js"></script><script id="facebook-jssdk" src="./Prepare _ CodeChef_files/sdk.js"></script><script src="./Prepare _ CodeChef_files/277309139459596" async=""></script><script src="./Prepare _ CodeChef_files/355751851552349" async=""></script><script src="./Prepare _ CodeChef_files/460995904241257" async=""></script><script async="" src="./Prepare _ CodeChef_files/fbevents.js"></script><script async="" src="./Prepare _ CodeChef_files/gtm.js"></script><script>
+            (function(_,e,rr,s){_errs=[s];var c=_.onerror;_.onerror=function(){var a=arguments;_errs.push(a);
+              c&&c.apply(this,a)};var b=function(){var c=e.createElement(rr),b=e.getElementsByTagName(rr)[0];
+                c.src="//beacon.errorception.com/"+s+".js";c.async=!0;b.parentNode.insertBefore(c,b)};
+                _.addEventListener?_.addEventListener("load",b,!1):_.attachEvent("onload",b)})
+            (window,document,"script","4e7c8fce06a9ab05530008e5");
+          </script>
+          <!--End Errorception -->
+<!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-TV5X2M');</script>
+        <!-- End Google Tag Manager -->
+<!-- Facebook Pixel Code -->
+        <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window,document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '277309139459596');
+        fbq('track', 'PageView');
+        </script>
+        <noscript>
+        &lt;img height="1" width="1"
+        src="https://www.facebook.com/tr?id=277309139459596&amp;ev=PageView
+        &amp;noscript=1"/&gt;
+        </noscript>
+        <!-- End Facebook Pixel Code -->    <script type="text/javascript">var _sf_startpt = (new Date()).getTime()</script>
+    <title>Prepare | CodeChef</title>
+    
+<meta name="keywords" content="programming, language, algorithm, contest, contester, Java, C#, Pascal, C, C++, python, ruby, caml, ocaml, perl, haskell, lisp, prolog, fortran, assembler, asembler, functional, online, judge, problem, problemset, ACM">
+<link rel="shortcut icon" href="https://www.codechef.com/misc/favicon.ico" type="image/x-icon">
+    <link type="text/css" rel="stylesheet" media="all" href="./Prepare _ CodeChef_files/css_e31aa32df5b92daa20c205efd161e6c6.css">
+    <link type="text/css" rel="stylesheet" media="all" href="./Prepare _ CodeChef_files/new-style.css">
+    <link type="text/css" rel="stylesheet" media="all" href="./Prepare _ CodeChef_files/new-login-bar.css">
+    <link rel="stylesheet" href="./Prepare _ CodeChef_files/jquery.dataTables.min.css">
+    <script type="text/javascript" src="./Prepare _ CodeChef_files/jquery.min.js"></script>
+<script type="text/javascript" src="./Prepare _ CodeChef_files/drupal.js"></script>
+<script type="text/javascript" src="./Prepare _ CodeChef_files/popupoverlay.js"></script>
+<script type="text/javascript" src="./Prepare _ CodeChef_files/aes.js"></script>
+<script type="text/javascript" src="./Prepare _ CodeChef_files/common.js"></script>
+<script type="text/javascript" src="./Prepare _ CodeChef_files/localStorage.js"></script>
+<script type="text/javascript" src="./Prepare _ CodeChef_files/keybinding.js"></script>
+<script type="text/javascript" src="./Prepare _ CodeChef_files/codechefGenericModal.js"></script>
+<script type="text/javascript" src="./Prepare _ CodeChef_files/codechef_common_functions.js"></script>
+<script type="text/javascript" src="./Prepare _ CodeChef_files/todo_notification.js"></script>
+<script type="text/javascript" src="./Prepare _ CodeChef_files/fb_sdk.js"></script>
+<script type="text/javascript" src="./Prepare _ CodeChef_files/nice_menus.js"></script>
+<script type="text/javascript" src="./Prepare _ CodeChef_files/common(1).js"></script>
+<script type="text/javascript" src="./Prepare _ CodeChef_files/jquery.scrollTo-min.js"></script>
+<script type="text/javascript" src="./Prepare _ CodeChef_files/jquery.localscroll-min.js"></script>
+<script type="text/javascript" src="./Prepare _ CodeChef_files/tableofcontents.js"></script>
+<script type="text/javascript" src="./Prepare _ CodeChef_files/codechef_recent_comments.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","username":null});
+//--><!]]>
+</script>
+    <!--[if lt IE 9]><script type="text/javascript" src="excanvas.js"></script><![endif]-->
+    <script src="./Prepare _ CodeChef_files/tagcloud.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        window.onload = function() {
+            try {
+                TagCanvas.Start('myCanvas','tags',{
+                    textColour: '#777777;',
+                    outlineColour: 'transparent',
+                    reverse: true,
+                    depth: 0.9,
+                    maxSpeed: 0.05,
+                    radiusX: 1.5,
+                    radiusY: 1,
+                    radiusZ: 1,
+                    weight: true,
+                    weightFrom:'data-weight'
+                });
+            } catch(e) {
+                // something went wrong, hide the canvas container
+                if(document.getElementById('myCanvasContainer'))
+                    document.getElementById('myCanvasContainer').style.display = 'none';
+            }
+        };
+    </script>
+
+<script src="./Prepare _ CodeChef_files/saved_resource"></script><script src="./Prepare _ CodeChef_files/saved_resource(1)"></script><script src="./Prepare _ CodeChef_files/saved_resource(2)"></script><script src="./Prepare _ CodeChef_files/saved_resource(3)"></script><script async="" src="./Prepare _ CodeChef_files/hotjar-167687.js"></script><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_loader{background-color:#f6f7f9;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29487d;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f9;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}
+.fb_customer_chat_bounce_in{animation-duration:250ms;animation-name:fb_bounce_in}.fb_customer_chat_bounce_out{animation-duration:250ms;animation-name:fb_fade_out}.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}.fb_mobile_overlay_active{height:100%;overflow:hidden;position:fixed;width:100%}@keyframes fb_fade_out{from{opacity:1}to{opacity:0}}@keyframes fb_bounce_in{0%{opacity:0;transform:scale(.8, .8);transform-origin:100% 100%}10%{opacity:.1}20%{opacity:.2}30%{opacity:.3}40%{opacity:.4}50%{opacity:.5}60%{opacity:.6}70%{opacity:.7}80%{opacity:.8;transform:scale(1.03, 1.03)}90{opacity:.9}100%{opacity:1;transform:scale(1, 1)}}</style><script type="text/javascript" src="chrome-extension://aggiiclaiamajehmlfpkjmlbadmkledi/lib/popup.js" async=""></script><script type="text/javascript" src="chrome-extension://aggiiclaiamajehmlfpkjmlbadmkledi/lib/tat_popup.js" async=""></script><script async="" src="./Prepare _ CodeChef_files/modules-fa7b914657f32d32df01f26b19e8f066.js"></script><style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style></head>
+<body class="sidebars" data-gr-c-s-loaded="true">
+<!-- Google Tag Manager (noscript) -->
+    <noscript>&lt;iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TV5X2M"
+    height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</noscript>
+    <!-- End Google Tag Manager (noscript) --><center>
+    <div class="header-container">
+        <div id="header" class="wrapper">
+            <div class="inner-wrapper">
+                <!-- Header -->
+                <div id="logo-floater" class="cols-2">
+                    <a href="https://www.codechef.com/" title=""><img src="./Prepare _ CodeChef_files/logo.png" alt="CodeChef is a non-commercial competitive programming community" id="logo"><span></span></a>                </div>
+                                <div class="cols-2">
+                    <div id="custom-login">
+                        <div id="user-bar"><form action="https://www.codechef.com/certification/prepare" accept-charset="UTF-8" method="post" id="new-login-form">
+<div><div class="form-item" id="edit-name-wrapper">
+ <label for="edit-name">Username: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" maxlength="60" name="name" id="edit-name" size="60" value="" class="form-text required new-input" placeholder="Username" tabindex="1">
+</div>
+<div class="form-item" id="edit-pass-wrapper">
+ <label for="edit-pass">Password: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="password" name="pass" id="edit-pass" maxlength="128" size="60" class="form-text required new-input" placeholder="Password" tabindex="2">
+</div>
+<a href="https://www.codechef.com/user/password" tabindex="4">Forgot Password</a><input type="hidden" name="form_build_id" id="form-dEDom2eStRKy4d5nT3NFDxlrbUDq-mwGidyPSkIqeUI" value="form-dEDom2eStRKy4d5nT3NFDxlrbUDq-mwGidyPSkIqeUI">
+<input type="hidden" name="form_id" id="edit-new-login-form" value="new_login_form">
+<input type="submit" name="op" id="edit-submit" value="Login" class="form-submit btn new-input-button" tabindex="3">
+
+</div></form>
+</div><div id="facebook-login"><script type="text/javascript">
+    String.prototype.capitalize = function() {
+        return this.charAt(0).toUpperCase() + this.slice(1);
+    };
+
+    disconnectOauth = function (event, account){
+        if(event!=undefined)
+        {
+            event.preventDefault();
+        }
+        var r = confirm("Are you sure you want to disconnect "+account.capitalize()+" account?");
+        if (r == true) {
+            clearUserCache();
+            $.ajax({url:'/OAuth/'+account,
+                type:'DELETE',
+                success:function(){
+                    window.location.reload();
+                },
+                error:function(){
+                    invokeGenericModal({message:"Couldn't complete your request. Please try again.",id:account+'-error-message'});
+                }
+            });
+        }
+    };
+</script>
+<div id="oauth-buttons" class="oauth-buttons-header">
+    <li><a class="icon-social oauth_button oauth_button-small connect" title="Signup/Login with Google" id="button_google" onclick="clearUserCache(); window.location=&#39;/OAuth/google?state=initiate&#39;;"></a></li><li><a class="icon-social oauth_button oauth_button-small connect" title="Signup/Login with Github" id="button_github" onclick="clearUserCache(); window.location=&#39;/OAuth/github?state=initiate&#39;;"></a></li><li><a class="icon-social oauth_button oauth_button-small connect" title="Signup/Login with Facebook" id="button_facebook" onclick="clearUserCache(); window.location=&#39;/fb/auth?src=certification/prepare&#39;;"></a></li></div></div><div class="signup"><a href="https://www.codechef.com/signup" class="new-input-button btn">New User</a></div>                                            </div>
+
+                    <div id="block-nice_menus-1" class="block block-nice_menus block-header">
+  <div class="content">
+    <h2><span class="nice-menu-hide-title">Site Navigation</span></h2>    <ul class="nice-menu nice-menu-down" id="nice-menu-1"><li id="menu-302" class="menuparent menu-path-problems-school"><a href="https://www.codechef.com/problems/school" title="">PRACTICE</a><ul><li id="menu-5215" class="menu-path-ide"><a href="https://www.codechef.com/ide" title="">Code, Compile &amp; Run</a></li>
+<li id="menu-2602" class="menu-path-problems-school"><a href="https://www.codechef.com/problems/school" title="">Beginner</a></li>
+<li id="menu-303" class="menu-path-problems-easy"><a href="https://www.codechef.com/problems/easy" title="">Easy</a></li>
+<li id="menu-304" class="menu-path-problems-medium"><a href="https://www.codechef.com/problems/medium" title="">Medium</a></li>
+<li id="menu-305" class="menu-path-problems-hard"><a href="https://www.codechef.com/problems/hard" title="">Hard</a></li>
+<li id="menu-1819" class="menu-path-problems-challenge"><a href="https://www.codechef.com/problems/challenge" title="">Challenge</a></li>
+<li id="menu-1376" class="menu-path-problems-extcontest"><a href="https://www.codechef.com/problems/extcontest" title="">Peer</a></li>
+</ul>
+</li>
+<li id="menu-309" class="menuparent menu-path-contests"><a href="https://www.codechef.com/contests" title="">COMPETE</a><ul><li id="menu-2203" class="menu-path-www.codechef.com-contests"><a href="http://www.codechef.com/contests" title="">All Contests</a></li>
+<li id="menu-5225" class="menu-path-https--www.codechef.com-MARCH18"><a href="https://www.codechef.com/MARCH18" title="">March Challenge 2018</a></li>
+<li id="menu-5679" class="menu-path-www.codechef.com-COOK92"><a href="http://www.codechef.com/COOK92" title="">March Cook-Off 2018</a></li>
+<li id="menu-6466" class="menu-path-www.codechef.com-LTIME57"><a href="http://www.codechef.com/LTIME57" title="">February Lunchtime 2018</a></li>
+</ul>
+</li>
+<li id="menu-138" class="menuparent menu-path-discuss.codechef.com-"><a href="http://discuss.codechef.com/" title="">DISCUSS</a><ul><li id="menu-139" class="menu-path-discuss.codechef.com-"><a href="http://discuss.codechef.com/" title="">Forums</a></li>
+<li id="menu-140" class="menu-path-blog.codechef.com-"><a href="http://blog.codechef.com/" title="">Blog</a></li>
+<li id="menu-920" class="menu-path-wiki-"><a href="https://www.codechef.com/wiki/" title="">Wiki</a></li>
+<li id="menu-2202" class="menu-path-https--www.facebook.com-CodeChef"><a href="https://www.facebook.com/CodeChef" title="">Facebook</a></li>
+<li id="menu-141" class="menu-path-www.twitter.com-codechef"><a href="http://www.twitter.com/codechef" title="">Twitter</a></li>
+</ul>
+</li>
+<li id="menu-143" class="menuparent menu-path-node-124098"><a href="https://www.codechef.com/community" title="">COMMUNITY</a><ul><li id="menu-650" class="menu-path-https--www.codechef.com-certification-about"><a href="https://www.codechef.com/certification/about" title="">CCDSAP Certification</a></li>
+<li id="menu-6030" class="menu-path-https--goodies.codechef.com-"><a href="https://goodies.codechef.com/" title="">Goodies Website</a></li>
+<li id="menu-5866" class="menu-path-https--www.codechef.com-snackdown-2017"><a href="https://www.codechef.com/snackdown/2017" title="">SnackDown 2017</a></li>
+<li id="menu-5741" class="menu-path-www.codechef.com-school"><a href="http://www.codechef.com/school" title="">CodeChef for Schools</a></li>
+<li id="menu-733" class="menu-path-www.codechef.com-hostyourcontest"><a href="http://www.codechef.com/hostyourcontest" title="Hosting Contest on CodeChef">Host your Contest</a></li>
+<li id="menu-2310" class="menu-path-www.codechef.com-goforgold"><a href="http://www.codechef.com/goforgold" title="">Go for Gold</a></li>
+<li id="menu-3830" class="menu-path-www.codechef.com-campus_chapter-about"><a href="http://www.codechef.com/campus_chapter/about" title="">Campus Chapter</a></li>
+</ul>
+</li>
+<li id="menu-147" class="menuparent menu-path-node-3"><a href="https://www.codechef.com/help" title="">HELP</a><ul><li id="menu-5824" class="menu-path-node-6587475"><a href="https://www.codechef.com/ratings" title="">Rating Mechanism</a></li>
+<li id="menu-6689" class="menu-path-node-9690576"><a href="https://www.codechef.com/ratings/divisions" title="Rating Divisions">Rating Divisions</a></li>
+<li id="menu-643" class="menu-path-www.codechef.com-wiki-faq"><a href="http://www.codechef.com/wiki/faq" title="">Frequently Asked Questions</a></li>
+<li id="menu-5813" class="menu-path-ratings-all"><a href="https://www.codechef.com/ratings/all" title="">CodeChef Rating (All)</a></li>
+<li id="menu-5815" class="menu-path-ratings-all-school"><a href="https://www.codechef.com/ratings/all-school" title="">CodeChef Rating (Junior)</a></li>
+<li id="menu-710" class="menu-path-www.codechef.com-wiki-faq-problem-setters"><a href="http://www.codechef.com/wiki/faq-problem-setters" title="">FAQ for problem setters</a></li>
+<li id="menu-1389" class="menu-path-www.codechef.com-problemsetting"><a href="http://www.codechef.com/problemsetting" title="Codechef Problem Creation">Problem Setting</a></li>
+<li id="menu-850" class="menu-path-www.codechef.com-wiki-tutorials"><a href="http://www.codechef.com/wiki/tutorials" title="">Tutorials</a></li>
+<li id="menu-1820" class="menu-path-node-503865"><a href="https://www.codechef.com/event-calendar" title="Event Calendar">Event Calendar</a></li>
+<li id="menu-2372" class="menu-path-discuss.codechef.com-top-users-"><a href="http://discuss.codechef.com/top/users/" title="">Top Contributors on Discuss</a></li>
+</ul>
+</li>
+<li id="menu-5681" class="menuparent menu-path-node-6479484"><a href="https://www.codechef.com/aboutus" title="">ABOUT</a><ul><li id="menu-151" class="menu-path-www.codechef.com-aboutus"><a href="http://www.codechef.com/aboutus" title="">About CodeChef</a></li>
+<li id="menu-708" class="menu-path-node-157468"><a href="https://www.codechef.com/press" title="Press Room">Press Room</a></li>
+<li id="menu-709" class="menu-path-node-157470"><a href="https://www.codechef.com/ceoscorner" title="CEO&#39;s Corner">CEO's Corner</a></li>
+<li id="menu-1858" class="menu-path-www.codechef.com-contactus"><a href="http://www.codechef.com/contactus" title="">Contact Us</a></li>
+<li id="menu-152" class="menu-path-www.directi.com-"><a href="http://www.directi.com/" title="">About Directi</a></li>
+</ul>
+</li>
+</ul>
+  </div>
+</div>
+                </div>
+
+            </div>
+        </div>
+        <!-- /HEADER -->
+    </div><div class="snackdown-bar"><img src="./Prepare _ CodeChef_files/campaign-banner-ccdsap-8.png" usemap="#image-map" style="width:968px; margin:15px 0;box-shadow:0 3px 6px 0px rgba(0,0,0,0.2);">
+<map name="image-map">
+	<area target="_blank" alt="" title="" href="https://www.codechef.com/certification/about?ref=google" coords="964,39,818,1" shape="rect">
+</map></div><!--.header-container-->
+    <center>
+        <table cellspacing="0" cellpadding="10" id="maintable" class="maintable">
+            <tbody><tr>
+                <td class="content" width="99%">
+                    <div class="c4s_wrapper-in-new">
+                        <div class="c4s_content">
+                            <div class="c4s_content-in-new">
+                                                                                                        <div class="user-content">
+                                      <div class="snackdown-container blue">
+                                                                                <div id="block-block-113" class="block block-block">
+  <div class="r1 t"></div><div class="r2"></div><div class="r3"></div><div class="r4"></div><div class="r5"></div>
+  <div class="content">
+        <style>
+    .snackdown-container .pull-right {
+        margin-top: 17px;
+        margin-right: 20px;
+        text-align: center;
+    }
+
+    .snackdown-container .pull-right .title {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .snackdown-container .header-timestamp {
+        display: flex;
+float: none!important;
+    margin-top: 0!important;
+    }
+
+    .snackdown-container .header-timestamp .timestamp {
+        padding-left: 0.8rem;
+        padding-bottom: 0;
+        margin-left: 0 !important;
+    }
+
+    .snackdown-container .header-timestamp .timestamp .title {
+        float: none;
+        padding-bottom: 0;
+        color: #333;
+        font-size: 14px;
+    }
+.snackdown-container .time-stats::after{
+    content: '';
+position: absolute;
+z-index: 1;
+left: -2px!important;
+bottom: 0;
+width: 100.4%!important;
+height: 10px;
+box-shadow: 0 4px 5px -1px rgba(0,0,0,.12)!important;
+}
+.snackdown-container .time-stats b,
+.snackdown-container .time-stats strong{
+    font-weight: bold;
+}
+.snackdown-container .time-stats .label{
+    background: #fad75a;
+    padding: 2px 4px;
+    border-radius: 2px;
+    margin: 6px;
+    color: #000;
+}
+.snackdown-container .time-stats.text-center{
+    padding-right: 0;
+}
+.snackdown-container .time-stats.time-stats-white{
+    background: #fff;
+    font-size: 14px;
+    padding: 5px 0 3px;
+}
+.snackdown-container .inner .main h2.page-title{margin:0!important;font:400 20px/23px Arial!important;color:#4a4a4a!important;}
+</style>
+<div class="fixed-header">
+	<div class="header header2017 header-certification">
+		<h1 class="site-title">CodeChef Certified Data Structure &amp; Algorithms Programme (CCDSAP)</h1>
+		<div class="pull-right">
+			<div class="title">Next Exam Date</div>
+
+			<div class="header-timestamp">
+				<ul class="timestamp inline-list" style="padding-left: 2.4rem;">
+					<li class="left">
+						<span class="month">May</span>
+						<span class="year">2018</span>
+					</li>
+					<li class="right">
+						<span class="date">26</span>
+					</li>
+				</ul>
+			</div>
+			<a href="https://www.codechef.com/certification/enroll" class="button blue" style="margin-right: 0;">Enroll</a>
+
+		</div>
+	</div>
+	<div class="time-stats time-stats-white text-center">Registration Closes on <b>6<sup>th</sup> May 2018</b></div>
+</div>
+<link type="text/css" rel="stylesheet" media="all" href="./Prepare _ CodeChef_files/snackdown.css">
+<script src="./Prepare _ CodeChef_files/jquery.min(1).js"></script>
+<script type="text/javascript" src="./Prepare _ CodeChef_files/moment.js"></script>
+<script type="text/javascript" src="./Prepare _ CodeChef_files/moment-timezone-with-data.js"></script>
+<script type="text/javascript" src="./Prepare _ CodeChef_files/jstz-min.js"></script>
+<script language="javascript" type="text/javascript">
+	var start_date = [2016, 05, 17, 21, 30, 00]
+	var contest_text = 'Registration';
+	var start_date_obj = new Date(start_date[0], (start_date[1] - 1), start_date[2], start_date[3], start_date[4], start_date[5]);
+	$(document).ready(function() {
+		$('#clock-text').html(contest_text);
+		GetCount("March 04, 2018 04: 16: 40 ");
+
+		function GetCount(ts) {
+			var time_left = '';
+			current_date_obj = new Date(ts);
+			var diff_in_time1 = start_date_obj.getTime() - current_date_obj.getTime();
+
+			var time_left_for_start = [diff_in_time1];
+
+			days = 0;
+			hours = 0;
+			mins = 0;
+			secs = 0;
+			out = "";
+			time_left_for_start[0] = Math.floor(time_left_for_start[0] / 1000);
+			days = Math.floor(time_left_for_start[0] / 86400);
+			time_left_for_start[0] = time_left_for_start[0] % 86400;
+
+			hours = Math.floor(time_left_for_start[0] / 3600);
+			time_left_for_start[0] = time_left_for_start[0] % 3600;
+
+			mins = Math.floor(time_left_for_start[0] / 60);
+			time_left_for_start[0] = time_left_for_start[0] % 60;
+
+			secs = Math.floor(time_left_for_start[0]);
+
+			$('#clock-day-left').html(String(days));
+			$('#clock-hrs-left').html(String(hours));
+			$('#clock-min-left').html(String(mins));
+			$('#clock-sec-left').html(String(secs));
+
+			nextSec = (current_date_obj.getTime() + 1000);
+			setTimeout(function() {
+				GetCount(nextSec)
+			}, 1000);
+		}
+	});
+</script>
+<script language="javascript" type="text/javascript">
+	$(document).ready(function() {
+
+		var url = $(location).attr('href');
+		var parts = url.split("/");
+		var snackDownYear = parts[parts.length-2];
+		var snackDownPage = parts[parts.length-1].split("?")[0];
+		$('.snackdown-container .inner .nav #side-nav > ul li.' + snackDownPage).children('a').addClass('active');
+		$('.snackdown-container .time-stats .legacy-links li a.' + snackDownYear).addClass('current');
+		if(snackDownPage == '2017'){
+			$('.snackdown-container .inner .nav ul li.about a').addClass('active');
+			$('.snackdown-container .time-stats .legacy-links li a.2017').addClass('current');
+		}
+
+		$('.accordion > li > .toggle').click(function(e) {
+			$(this).siblings().toggle();
+			$(this).toggleClass('collapsed');
+			e.preventDefault();
+		});
+
+		$('.accordion .inner li a.toggle').click(function(e) {
+			$(this).toggleClass('border-none');
+			$(this).parent().next('li').toggleClass('border-top');
+			$(this).siblings().find('p, ul').toggle();
+			$(this).toggleClass('collapsed');
+			e.preventDefault();
+		});
+
+		$('.collapsible .sub-title').click(function(e) {
+			$(this).toggleClass('collapsed');
+			$(this).siblings().toggle();
+			e.preventDefault();
+		});
+
+		$('.button-toggle-accordion').click(function(e){
+			$('.collapsible .sub-title').toggleClass('collapsed');
+			$('.collapsible .sub-title').siblings().toggle();
+			var thisText = $(this).text();
+			if(thisText == 'Collapse All'){
+				$(this).text('Expand All');
+			}else{
+				$(this).text('Collapse All');
+			}
+			e.preventDefault();
+		});
+
+		function pageTitleOnScroll(){
+			var win = $(window);
+			var el = $('.snackdown-container .inner .main h2.page-title');
+			var header = $('.snackdown-container .fixed-header');
+			var headerOffset = header.offset().top;
+			var headerOffsetFromTop = (headerOffset - scrollTop);
+
+			var scrollTop = win.scrollTop();
+			var elOffset = el.offset().top;
+			var elOffsetFromTop = (elOffset - scrollTop);
+			if(elOffsetFromTop <= 0){
+				el.addClass('fixed');
+			}else if(headerOffsetFromTop > 146){
+				el.removeClass('fixed');
+			}
+		}
+		$(window).on('scroll resize', pageTitleOnScroll);
+		pageTitleOnScroll();
+
+		function onScrollActive(){
+			var win = $(window);
+			var el = $('.inline-title');
+			var scrollTop = win.scrollTop();
+			el.each(function(){
+				var t = $(this);
+				var tID = t.attr('id');
+				var thisOffset = t.offset().top;
+				var thisOffsetFromTop = (thisOffset - scrollTop);
+				if(thisOffsetFromTop >= 0 && thisOffsetFromTop <= 50){
+					$('.snackdown-container .inner .nav ul li ul li a').removeClass('active');
+					$('.snackdown-container .inner .nav ul li ul li a[href="#'+tID+'"]').addClass('active');
+				}
+			});
+		}
+		$(window).on('scroll resize', onScrollActive);
+		onScrollActive();
+	});
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var sidebar = $('.inner .nav');
+		var movableDiv = $('.inner .nav div#side-nav');
+		var main = $('.main');
+
+		sidebar.css('display', 'table-cell');
+		main.css('display', 'table-cell');
+
+		function fixScroll(sidebar, movableDiv) {
+			var vw = $(window).width();
+			if(vw >= 1024){
+				$(window).scroll(function() {
+					var scroll = $(this).scrollTop();
+					var length = sidebar.height() - movableDiv.height() + sidebar.offset().top;
+					movableDiv.css({
+						'height': 'auto'
+					});
+
+					if (scroll < sidebar.offset().top) {
+						var sidebarTopOffset = sidebar.offset().top;
+						movableDiv.offset({top: (sidebarTopOffset + 33)});
+						$('.snackdown-container .inner .main h2.page-title').removeClass('fixed');
+					}
+					else if (scroll > length) {
+						var sidebarBottomOffset = sidebar.height() + sidebar.offset().top;
+						movingDivTopOffset = (sidebarBottomOffset - movableDiv.height()) + 30;
+						movableDiv.offset({top: movingDivTopOffset});
+					}
+					else {
+						height = movableDiv.height() + 'px';
+						movableDiv.css({
+							'position': 'fixed',
+							'top': '30px',
+							'width': '220px'
+						});
+					}
+				});
+			}
+		}
+
+		fixScroll(sidebar, movableDiv);
+
+		$(window).on('resize', function(){
+			fixScroll(sidebar, movableDiv);
+		});
+	});
+</script>  </div>
+  <div class="r5"></div><div class="r4"></div><div class="r3"></div><div class="r2"></div><div class="r1 b"></div>
+</div>
+                                                                        <div class="inner">
+                                                                                <div class="nav" style="display: table-cell;">
+                                            <div id="block-block-112" class="block block-block">
+  <div class="r1 t"></div><div class="r2"></div><div class="r3"></div><div class="r4"></div><div class="r5"></div>
+  <div class="content">
+        <div id="side-nav" style="height: auto; position: fixed; top: 93px; width: 220px;">
+	<ul>
+		<li class="about">
+			<a href="https://www.codechef.com/certification/about" class="toggle">Overview</a>
+			<ul>
+				<li class="overview"><a href="https://www.codechef.com/certification/about">About</a></li>
+				<li class="why"><a href="https://www.codechef.com/certification/prepare#why">Why this Certification</a></li>
+				<li class="advantages"><a href="https://www.codechef.com/certification/prepare#advantages">Advantages of Certification</a></li>
+			</ul>
+		</li>
+               <li class="news"><a href="https://www.codechef.com/certification/news">Updates</a></li>
+		<li class="divider"></li>
+		<li class="levels"><a href="https://www.codechef.com/certification/levels">Levels</a></li>
+		<li class="divider"></li>
+		<li class="details">
+			<a href="https://www.codechef.com/certification/details#validity" class="toggle">Details</a>
+			<ul>
+				<li class="details"><a href="https://www.codechef.com/certification/prepare#validity">Validity</a></li>
+				<li class="process"><a href="https://www.codechef.com/certification/prepare#eligibility">Eligibility</a></li>
+				<li class="price"><a href="https://www.codechef.com/certification/prepare#price">Price</a></li>
+				<li class="city"><a href="https://www.codechef.com/certification/prepare#city">City</a></li>
+				<li class="how-it-works"><a href="https://www.codechef.com/certification/prepare#how-it-works">How It Works</a></li>
+			</ul>
+		</li>
+		<li class="divider"></li>
+		<li class="schedule"><a href="https://www.codechef.com/certification/schedule">Schedule</a></li>
+		<li class="prepare">
+			<a href="https://www.codechef.com/certification/prepare#foundation" class="toggle active">Prepare</a>
+			<ul>
+				<li><a href="https://www.codechef.com/certification/prepare#foundation" class="active">Foundation</a></li>
+				<li><a href="https://www.codechef.com/certification/prepare#advanced" class="">Advanced</a></li>
+				<li><a href="https://www.codechef.com/certification/prepare#expert" class="">Expert</a></li>
+			</ul>
+		</li>
+		<li class="examination">
+			<a href="https://www.codechef.com/certification/examination#format" class="toggle">Examination</a>
+			<ul>
+				<li><a href="https://www.codechef.com/certification/prepare#format">Format</a></li>
+				<li><a href="https://www.codechef.com/certification/prepare#exam-environment">Exam Environment</a></li>
+				<li><a href="https://www.codechef.com/certification/prepare#rules">Rules</a></li>
+			</ul>
+		</li>
+		<li class="divider"></li>
+		<li class="faq">
+			<a href="https://www.codechef.com/certification/faq#general" class="toggle">FAQ</a>
+			<ul>
+				<li><a href="https://www.codechef.com/certification/prepare#general">General</a></li>
+				<li><a href="https://www.codechef.com/certification/prepare#registration">Registration</a></li>
+				<li><a href="https://www.codechef.com/certification/prepare#payment">Payment</a></li>
+				<li><a href="https://www.codechef.com/certification/prepare#centre">Centre</a></li>
+				<li><a href="https://www.codechef.com/certification/prepare#preparation">Preparation</a></li>
+				<li><a href="https://www.codechef.com/certification/prepare#environment">Environment</a></li>
+				<li><a href="https://www.codechef.com/certification/prepare#exam">Exam</a></li>
+				<li><a href="https://www.codechef.com/certification/prepare#code-of-conduct">Code of Conduct</a></li>
+				<li><a href="https://www.codechef.com/certification/prepare#more">More</a></li>
+			</ul>
+		</li>
+		<li class="contact"><a href="https://www.codechef.com/certification/contact">Contact Us</a></li>
+                <li class="representative"><a href="https://www.codechef.com/certification/representative">CRP<sup>New</sup></a></li>
+		<li class="divider"></li>
+		<li class="dashboard"><a href="https://www.codechef.com/certification/dashboard">Dashboard</a></li>
+		<!---<li class="my-transaction">
+			<a href="/certification/my-transaction" class="toggle">Dashboard</a>
+			<ul>
+				<li class="my-transaction"><a href="/certification/my-transaction">My Transaction</a></li>
+				<li class="my-certificates"><a href="/certification/my-certificates">My Certificates</a></li>
+				<li class="my-admit-card"><a href="/certification/my-admit-card">Admit Card</a></li>
+			</ul>
+		</li>
+		<li class="divider"></li>
+		<li class="corporates"><a href="/certification/corporates">Corporates</a></li> -->
+	</ul>
+</div>  </div>
+  <div class="r5"></div><div class="r4"></div><div class="r3"></div><div class="r2"></div><div class="r1 b"></div>
+</div>
+                                        </div>
+                                                                        <div class="main" style="display: table-cell;">
+                                        <h2 class="page-title">
+                                            <div class="page-title-shadow"></div>
+                                            <span>Prepare</span>
+                                        </h2>
+                                        <div class="main-wrapper">
+                                            <div id="node-9685883" class="node clear-block">
+
+  <div class="meta">
+  
+    </div>
+
+  <div class="content">
+	<style><!--
+.snackdown-container .inner .main h2.page-title.fixed{position:static!important;}
+--></style>
+<script type="text/javascript">// <![CDATA[
+$(document).ready(function(){
+	$(".snackdown-container .inner .nav ul li.prepare > a").addClass('active');
+});
+// ]]></script>
+<p>This sections lists out the syllabus, the learning resources and Mock Tests to help you prepare for the Certification test. The resources that we list here are references that we have collected over the internet and some of them from our own website. While we do recommend these resources based on the inputs of our user community, we do not claim that these are the most authoritative Learning Resources about any topic. Please feel free to find out what suits best to you.</p>
+<p>We have also prepared a Mock Test for each level. A Mock Test is an open assessment contest that will help you assess yourself for the certification exam after you are ready with the topics. For each level we have different Mock Tests. These contests will run forever. We strongly recommend you to solve these problems in the same duration of time as the duration of the exam before you take the exam.</p>
+<p>Candidates can expect problems from the following topics to come in the exam.</p>
+<div id="foundation" class="inline-title"></div>
+<div class="collapsible mt0"><a class="sub-title" href="https://www.codechef.com/certification/prepare#">Foundation</a>
+<h2 id="foundation-syllabus">Syllabus:</h2>
+<p>The syllabus for each level is mentioned below:</p>
+<ul>
+<li>Basic Data Structures: Arrays, Strings, Stacks, Queues</li>
+<li>Asymptotic analysis (Big-O notation)</li>
+<li>Basic math operations (addition, subtraction, multiplication, division, exponentiation)</li>
+<li>Sqrt(n) primality testing</li>
+<li>Euclid’s GCD Algorithm</li>
+<li>Basic Recursion</li>
+<li>Greedy Algorithms</li>
+<li>Basic Dynamic Programming</li>
+<li>Naive string searching</li>
+<li>O(n logn) Sorting</li>
+<li>Binary Searching</li>
+</ul>
+<h2 id="foundation-resources">Learning Resources:</h2>
+<ul>
+<li><b>Asymptotic analysis (Big-O notation)</b> 
+<ul>
+<li>Basic 					
+<ul>
+<li>youtube.com - <a href="https://www.youtube.com/watch?v=V42FBiohc6c&amp;list=PL2_aWCzGMAwI9HK8YPVBjElbLbI3ufctn" target="_blank">Time complexity of a computer program </a></li>
+<li>youtube.com - <a href="https://www.youtube.com/watch?v=__vX2sjlpXU" target="_blank">Big-O notation in 5 minutes - The basics</a></li>
+<li>youtube.com - <a href="https://www.youtube.com/watch?v=i1F_Uu0bYCc" target="_blank">Definition Of Big O Notation - Intro to Theoretical Computer Science</a></li>
+<li>youtube.com - <a href="https://www.youtube.com/watch?v=aGjL7YXI31Q" target="_blank">Algorithms Lecture 1 -- Introduction to asymptotic notations</a></li>
+<li>iarcs.org.in - <a href="https://www.iarcs.org.in/inoi/online-study-material/topics/efficiency.php" target="_blank">Measuring the efficiency of algorithms</a></li>
+<li>interactivepython.org - <a href="http://interactivepython.org/courselib/static/pythonds/AlgorithmAnalysis/toctree.html" target="_blank">Particularly for Big-O notation</a></li>
+</ul>
+</li>
+<li>Advanced 					
+<ul>
+<li>rob-bell.net - <a href="https://rob-bell.net/2009/06/a-beginners-guide-to-big-o-notation/" target="_blank">A beginner's guide to Big O notation</a></li>
+<li>youtube.com - <a href="https://www.youtube.com/watch?v=v4cd1O4zkGw" target="_blank">Big O Notation, Gayle Laakman McDowell</a></li>
+<li>web.mit.edu - <a href="http://web.mit.edu/16.070/www/lecture/big_o.pdf" target="_blank">Big O notation</a></li>
+<li>youtube.com - <a href="https://www.youtube.com/watch?v=ncpTxqK35PI" target="_blank">Time and space complexity analysis of recursive programs - using factorial</a></li>
+<li><a href="http://eniac.cs.qc.cuny.edu/andrew/csci700/lecture2.pdf" target="_blank">A very nice tutorial with examples</a></li>
+</ul>
+</li>
+<li>Practice Problems 					
+<ul>
+<li>Check some MCQs on space and time complexity <a href="https://discuss.codechef.com/questions/122289/multiple-choice-questions-related-to-testing-knowledge-about-time-and-space-complexity-of-a-program">here</a>. </li>
+<li>You can see some problems with solutions here: <a href="http://www.iitk.ac.in/esc101/08Jul/lecnotes/practise_sol.pdf" target="_blank">Time complexity of an algorithm</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><b>Arrays</b> 
+<ul>
+<li>Resources 					
+<ul>
+<li>codechef.com - <a href="https://discuss.codechef.com/questions/87915/data-structure-tutorial-array" target="_blank">Data Structure Tutorial: Array </a></li>
+<li>cs.cmu.edu - <a href="https://www.cs.cmu.edu/~rjsimmon/15122-f14/lec/04-arrays.pdf" target="_blank">Arrays</a></li>
+<li>geeksforgeeks.org - <a href="http://www.geeksforgeeks.org/array-data-structure/" target="_blank">Arrays Data Structure</a></li>
+</ul>
+</li>
+<li>Practice Problems 					
+<ul>
+<li>codechef.com - <a href="https://www.codechef.com/problems/LECANDY" target="_blank">LECANDY</a>, <a href="https://discuss.codechef.com/questions/1108/lecandy-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/CNOTE" target="_blank">CNOTE</a>, <a href="https://discuss.codechef.com/questions/65992/cnote-editorial" target="_blank">editorial</a> ;</li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/SALARY" target="_blank">SALARY</a>, <a href="https://discuss.codechef.com/questions/5144/salary-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/CHN15A" target="_blank">CHN15A</a>, <a href="https://discuss.codechef.com/questions/77487/chn15a-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/RAINBOWA" target="_blank">RAINBOWA</a>, <a href="https://discuss.codechef.com/questions/107967/rainbowa-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/FRGTNLNG" target="_blank">FRGTNLNG</a>, <a href="https://discuss.codechef.com/questions/75211/frgtnlng-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/COPS" target="_blank">COPS</a>, <a href="https://discuss.codechef.com/questions/72499/cops-editorial" target="_blank">editorial</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><b>Strings</b> 
+<ul>
+<li>Resources 					
+<ul>
+<li>tutorialspoint.com - <a href="https://www.tutorialspoint.com/cplusplus/cpp_strings.htm" target="_blank">C++ strings </a></li>
+<li>guru99.com - <a href="https://www.guru99.com/java-strings.html" target="_blank">Java strings</a></li>
+<li>docs.python.org - <a href="https://docs.python.org/2/library/string.html" target="_blank">Python strings</a></li>
+<li>tutorialspoint.com - <a href="https://www.tutorialspoint.com/python/python_strings.htm" target="_blank">Python strings</a></li>
+<li>Many questions on the string:</li>
+<li>geeksforgeeks.org - <a href="http://www.geeksforgeeks.org/string-data-structure/" target="_blank">String Data Structure</a></li>
+</ul>
+</li>
+<li>Practice Problems 					
+<ul>
+<li>codechef.com - <a href="https://www.codechef.com/problems/CSUB" target="_blank">CSUB</a>, <a href="https://discuss.codechef.com/questions/47237/csub-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/LAPIN" target="_blank">LAPIN</a>, <a href="https://discuss.codechef.com/questions/13991/lapin-editorial" target="_blank">editorial</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><b>Stack and Queue</b> 
+<ul>
+<li>Resources 					
+<ul>
+<li>geeksforgeeks.org - <a href="http://www.geeksforgeeks.org/stack-data-structure/" target="_blank">Stack Data Structure</a></li>
+<li>geeksforgeeks.org - <a href="http://www.geeksforgeeks.org/queue-set-1introduction-and-array-implementation/" target="_blank">Introduction and Array Implementation</a></li>
+<li>tutorialspoint.com - <a href="https://www.tutorialspoint.com/data_structures_algorithms/stack_algorithm.htm" target="_blank">Data Structures Algorithms</a></li>
+<li>cs.cmu.edu - <a href="https://www.cs.cmu.edu/~wlovas/15122-r11/lectures/10-stacks.pdf" target="_blank">Stacks</a></li>
+<li>cs.cmu.edu - <a href="https://www.cs.cmu.edu/~adamchik/15-121/lectures/Stacks%20and%20Queues/Stacks%20and%20Queues.html" target="_blank">Stacks and Queues</a></li>
+<li>cs.cmu.edu - <a href="https://www.cs.cmu.edu/~rjsimmon/15122-s13/09-queuestack.pdf" target="_blank">Stacks and Queues</a></li>
+</ul>
+</li>
+<li>Practice Problems 					
+<ul>
+<li>spoj.com - <a href="http://www.spoj.com/problems/JNEXT/" target="_blank">JNEXT</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/STPAR/" target="_blank">STPAR</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/ONP/" target="_blank">ONP</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/COMPILER" target="_blank">COMPILER</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/MMASS/" target="_blank">MMASS</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/HISTOGRA/" target="_blank">HISTOGRA</a></li>
+<li>codeforces.com - <a href="http://codeforces.com/problemset/problem/281/D" target="_blank">D. Maximum Xor Secondary</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/ANARC09A/" target="_blank">ANARC09A</a></li>
+<li>codeforces.com - <a href="http://codeforces.com/contest/797/problem/C" target="_blank">C. Minimal string</a></li>
+<li>codeforces.com - <a href="http://codeforces.com/contest/343/problem/B" target="_blank">B. Alternating Current</a></li>
+<li>codeforces.com - <a href="http://codeforces.com/contest/5/problem/C" target="_blank">C. Longest Regular Bracket Sequence</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><b>Basic math operations (addition, subtraction, multiplication, division, exponentiation)</b> 
+<ul>
+<li>codechef.com - <a href="https://discuss.codechef.com/questions/20451/a-tutorial-on-fast-modulo-multiplication-exponential-squaring" target="_blank">A tutorial on Fast Modulo Multiplication</a></li>
+</ul>
+</li>
+<li><b>Euclid’s GCD Algorithm</b> 
+<ul>
+<li>Resources 					
+<ul>
+<li>youtube.com - <a href="https://www.youtube.com/watch?v=7HCd074v8g8" target="_blank">Mycodeschool video</a></li>
+<li>khanacademy.org - <a href="https://www.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/the-euclidean-algorithm" target="_blank">The Euclidean Algorithm</a></li>
+<li>geeksforgeeks.org - <a href="http://www.geeksforgeeks.org/c-program-find-gcd-hcf-two-numbers/" target="_blank">Example program to find gcd in c++: </a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><b>Prime Numbers, divisibility of numbers</b> 
+<ul>
+<li>Resources:
+<ul>
+<li>Only O(sqrt(n)) algorithm for finding whether a number is a prime, factorization of a number.</li>
+<li><a href="https://math.stackexchange.com/questions/1039519/finding-prime-factors-by-taking-the-square-root/1039525#1039525" target="_blank">Finding prime factors by taking the square root</a></li>
+</ul>
+</li>
+<li>Practice Problems:
+<ul>
+<li>community.topcoder.com - <a href="https://community.topcoder.com/stat?c=problem_statement&amp;pm=6186&amp;rd=9823" target="_blank">DivisorInc</a></li>
+<li>community.topcoder.com - <a href="https://community.topcoder.com/stat?c=problem_statement&amp;pm=4475&amp;rd=8012" target="_blank">Prime Polynom</a></li>
+<li>community.topcoder.com - <a href="https://community.topcoder.com/stat?c=problem_statement&amp;pm=3458&amp;rd=5869" target="_blank">Prime Anagrams</a></li>
+<li>community.topcoder.com - <a href="https://community.topcoder.com/stat?c=problem_statement&amp;pm=2986&amp;rd=5862" target="_blank">Refactoring</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><b>Basic Recursion</b> 
+<ul>
+<li>Resources 					
+<ul>
+<li>topcoder.com - <a href="https://www.topcoder.com/community/data-science/data-science-tutorials/an-introduction-to-recursion-part-1/" target="_blank">An Introduction to Recursion, Part 1</a></li>
+<li>topcoder.com - <a href="https://www.topcoder.com/community/data-science/data-science-tutorials/an-introduction-to-recursion-part-2/" target="_blank">An Introduction to Recursion: Part 2</a></li>
+<li>geeksforgeeks.org - <a href="http://www.geeksforgeeks.org/recursion/" target="_blank">Recursion</a> ;(along with questions)</li>
+<li>web.mit.edu - <a href="http://web.mit.edu/6.005/www/fa15/classes/10-recursion/" target="_blank">Recursion</a></li>
+<li>csee.umbc.edu - <a href="https://www.csee.umbc.edu/~chang/cs202.f98/readings/recursion.html" target="_blank">Recursion</a> ;(Examples with exercises)</li>
+<li>loveforprogramming.quora.com - <a href="https://loveforprogramming.quora.com/Backtracking-Memoization-Dynamic-Programming" target="_blank">Backtracking, Memoization &amp; Dynamic Programming</a></li>
+</ul>
+</li>
+<li>Practice Problems 					
+<ul>
+<li>codechef.com - <a href="https://www.codechef.com/problems/NOKIA" target="_blank">NOKIA</a>, <a href="https://discuss.codechef.com/questions/1280/nokia-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/TRISQ" target="_blank">TRISQ</a>, <a href="https://discuss.codechef.com/questions/64151/trisq-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/LFSTACK" target="_blank">LFSTACK</a>, <a href="https://discuss.codechef.com/questions/84364/lfstack-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/FICE" target="_blank">FICE</a>, <a href="https://discuss.codechef.com/questions/85839/fice-editorial" target="_blank">editorial</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><b>Greedy Algorithms</b> 
+<ul>
+<li>Resources 					
+<ul>
+<li>iarcs.org.in - <a href="https://www.iarcs.org.in/inoi/online-study-material/topics/greedy.php" target="_blank">Greedy Algorithms</a></li>
+<li>iarcs.org.in - <a href="https://www.iarcs.org.in/inoi/online-study-material/problems/buffalos-soln.php#solution" target="_blank">Greedy Algorithms</a></li>
+<li>topcoder.com - <a href="https://www.topcoder.com/community/data-science/data-science-tutorials/greedy-is-good/" target="_blank">Greedy Algorithms</a></li>
+<li><a href="http://jeffe.cs.illinois.edu/teaching/algorithms/notes/07-greedy.pdf" target="_blank">Greedy Algorithms</a></li>
+</ul>
+</li>
+<li>Practice Problems 					
+<ul>
+<li>codechef.com - <a href="https://www.codechef.com/problems/TACHSTCK" target="_blank">TACHSTCK</a>, <a href="https://discuss.codechef.com/questions/18267/tachstck-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/CIELRCPT" target="_blank">CIELRCPT</a>, <a href="https://discuss.codechef.com/questions/1748/cielrcpt-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/MAXDIFF" target="_blank">MAXDIFF</a>, <a href="https://discuss.codechef.com/questions/8114/maxdiff-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/CHEFST" target="_blank">CHEFST</a>, <a href="https://discuss.codechef.com/questions/77629/chefst-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/CAKEDOOM" target="_blank">CAKEDOOM</a>, <a href="https://discuss.codechef.com/questions/1119/cakedoom-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/CLETAB" target="_blank">CLETAB</a>, <a href="https://discuss.codechef.com/questions/49342/cletab-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/TADELIVE" target="_blank">TADELIVE</a>, <a href="https://discuss.codechef.com/questions/60005/tadelive-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/MANYCHEF" target="_blank">MANYCHEF</a>, <a href="https://discuss.codechef.com/questions/5606/manychef-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/MMPROD" target="_blank">MMPROD</a>, <a href="https://discuss.codechef.com/questions/82151/mmprod-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/CHEFTMA" target="_blank">CHEFTMA</a>, <a href="https://discuss.codechef.com/questions/78212/cheftma-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/STICKS" target="_blank">STICKS</a>, <a href="https://discuss.codechef.com/questions/82568/sticks-editorial" target="_blank">editorial</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/BAISED/" target="_blank">BAISED</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/BALIFE/" target="_blank">BALIFE</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/GCJ101BB/" target="_blank">GCJ101BB</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/FGFS" target="_blank">FGFS</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/KNPSK" target="_blank">KNPSK</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/LEMUSIC" target="_blank">LEMUSIC</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/ARRANGE/" target="_blank">ARRANGE</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/FASHION/" target="_blank">FASHION</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><b>Dynamic programming (Basic DP)</b> 
+<ul>
+<li>Resources 					
+<ul>
+<li>medium.freecodecamp.org - <a href="https://medium.freecodecamp.org/demystifying-dynamic-programming-3efafb8d4296" target="_blank">Demystifying Dynamic Programming</a></li>
+<li>iarcs.org.in - <a href="https://www.iarcs.org.in/inoi/online-study-material/topics/dp-tiling.php" target="_blank">Dynamic Programming - Tiling</a></li>
+<li>topcoder.com - <a href="https://www.topcoder.com/community/data-science/data-science-tutorials/dynamic-programming-from-novice-to-advanced/" target="_blank">Dynamic Programming – From Novice to Advanced</a></li>
+<li>illinois.edu - <a href="http://jeffe.cs.illinois.edu/teaching/algorithms/notes/05-dynprog.pdf" target="_blank">Dynamic Programming</a> ;(Exercises are recommended)</li>
+<li>codechef.com - <a href="https://www.codechef.com/wiki/tutorial-dynamic-programming" target="_blank">Dynamic Programming</a></li>
+<li>geeksforgeeks.org - <a href="http://www.geeksforgeeks.org/dynamic-programming/" target="_blank">Dynamic Programming</a> ;(Contains a lot of practice sessions)</li>
+<li>MIT OCW (Contains some Advanced topics as well)
+<ul>
+<li><a href="https://www.youtube.com/watch?v=OQ5jsbhAv_M" target="_blank">Dynamic Programming I</a></li>
+<li><a href="https://www.youtube.com/watch?v=ENyox7kNKeY" target="_blank">Dynamic Programming II</a></li>
+<li><a href="https://www.youtube.com/watch?v=ocZMDMZwhCY" target="_blank">Dynamic Programming III</a></li>
+<li><a href="https://www.youtube.com/watch?v=tp4_UXaVyx8" target="_blank">Dynamic Programming IV</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Practice Problems 					
+<ul>
+<li>codechef.com - <a href="https://www.codechef.com/problems/ALTARAY" target="_blank">ALTARAY</a>, <a href="https://discuss.codechef.com/questions/80137/altaray-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/DELISH" target="_blank">DELISH</a>, <a href="https://discuss.codechef.com/questions/13727/delish-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/DBOY" target="_blank">DBOY</a>, <a href="https://discuss.codechef.com/questions/4443/dboy-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/XORSUB" target="_blank">XORSUB</a>, <a href="https://discuss.codechef.com/questions/58422/xorsub-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/GRID" target="_blank">GRID</a>, <a href="https://discuss.codechef.com/questions/51454/grid-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/TADELIVE" target="_blank">TADELIVE</a>, <a href="https://discuss.codechef.com/questions/60005/tadelive-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/FROGV" target="_blank">FROGV</a>, <a href="https://discuss.codechef.com/questions/47239/frogv-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/MATRIX2" target="_blank">MATRIX2</a>, <a href="https://discuss.codechef.com/questions/22491/matrix2-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/AMSGAME2" target="_blank">AMSGAME2</a>, <a href="https://discuss.codechef.com/questions/10495/amsgame2-editorial" target="_blank">editorial</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/MDOLLS/" target="_blank">MDOLLS</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/MSTICK/" target="_blank">MSTICK</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/MCARDS/" target="_blank">MCARDS</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/MIXTURES/" target="_blank">MIXTURES</a></li>
+<li>spoj.com - <a href="https://www.spoj.pl/problems/SAMER08D/" target="_blank">SAMER08D</a></li>
+<li>spoj.com - <a href="https://www.spoj.pl/problems/AIBOHP/" target="_blank">AIBOHP</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><b>Naive string searching</b> 
+<ul>
+<li>Resources 					
+<ul>
+<li>geeksforgeeks.org - <a href="http://www.geeksforgeeks.org/searching-for-patterns-set-1-naive-pattern-searching/" target="_blank">Naive Pattern Searching</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><b>Sorting</b> 
+<ul>
+<li><a href="https://www.khanacademy.org/computing/computer-science/algorithms/sorting-algorithms/a/sorting" target="_blank">khanacademy.org</a></li>
+<li><a href="https://visualgo.net/en/sorting?slide=1" target="_blank">visualgo.net</a></li>
+<li><a href="https://www.iarcs.org.in/inoi/online-study-material/topics/sorting.php" target="_blank">iarcs.org.in</a></li>
+<li>Merge sort 					
+<ul>
+<li>youtube.com - <a href="https://www.youtube.com/watch?v=TzeBrDU-JaY" target="_blank">Merge sort algorithm</a></li>
+<li>Practice Problems<br>codechef.com -<a href="https://www.codechef.com/problems/MRGSRT" target="_blank">MRGSRT</a></li>
+</ul>
+</li>
+<li>Quick sort 					
+<ul>
+<li>youtube.com - <a href="https://www.youtube.com/watch?v=COk73cpQbFQ" target="_blank">Quicksort algorithm</a></li>
+<li>Practice Problems<br>codechef.com -<a href="https://www.codechef.com/problems/TSORT" target="_blank">TSORT</a></li>
+</ul>
+</li>
+<li>Counting sort 					
+<ul>
+<li>geeksforgeeks.org - <a href="http://www.geeksforgeeks.org/counting-sort/" target="_blank">Counting Sort</a></li>
+<li>Practice Problems 							
+<ul>
+<li>codechef.com - <a href="https://www.codechef.com/problems/TACHSTCK" target="_blank">TACHSTCK</a>, <a href="https://discuss.codechef.com/questions/18267/tachstck-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/STICKS" target="_blank">STICKS</a>, <a href="https://discuss.codechef.com/questions/82568/sticks-editorial" target="_blank">editorial</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><b>Binary Search</b> 
+<ul>
+<li>Resources 					
+<ul>
+<li><a href="https://www.topcoder.com/community/data-science/data-science-tutorials/binary-search/" target="_blank">topcoder.com</a> (Try solving problems of Simple and Moderate level as mentioned in the end of the link)</li>
+<li><a href="https://www.codechef.com/wiki/tutorial-binary-search" target="_blank">codechef.com</a></li>
+<li><a href="https://www.cs.usfca.edu/~galles/visualization/Search.html" target="_blank">usfca.edu</a></li>
+<li><a href="https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search" target="_blank">khanacademy.org</a></li>
+</ul>
+</li>
+<li>Detailed Theoretical analysis 					
+<ul>
+<li><a href="https://www.cs.cmu.edu/~fp/courses/15122-f10/lectures/03-binsearch.pdf" target="_blank">cmu.edu</a> (A theoretical analysis)</li>
+</ul>
+</li>
+<li>Problems 					
+<ul>
+<li>geeksforgeeks.org - <a href="http://www.geeksforgeeks.org/binary-search" target="_blank">Binary Search</a> (Contains some solved problems)</li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/STRSUB" target="_blank">STRSUB</a>, <a href="https://discuss.codechef.com/questions/66064/strsub-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/ASHIGIFT" target="_blank">ASHIGIFT</a>, <a href="https://discuss.codechef.com/questions/66867/ashigift-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/STACKS" target="_blank">STACKS</a>, <a href="https://discuss.codechef.com/questions/75205/stacks-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/DIVSET" target="_blank">DIVSET</a>, <a href="https://discuss.codechef.com/questions/107068/divset-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/LOWSUM" target="_blank">LOWSUM</a>, <a href="https://discuss.codechef.com/questions/29659/lowsum-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/SNTEMPLE" target="_blank">SNTEMPLE</a>, <a href="https://discuss.codechef.com/questions/99456/sntemple-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/SNAKEEAT" target="_blank">SNAKEEAT</a>, <a href="https://discuss.codechef.com/questions/98802/snakeeat-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/SCHEDULE" target="_blank">SCHEDULE,</a> <a href="https://discuss.codechef.com/questions/92702/schedule-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/RIGHTTRI" target="_blank">RIGHTTRI</a>, <a href="https://discuss.codechef.com/questions/82375/righttri-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/FORESTGA" target="_blank">FORESTGA</a>, <a href="https://discuss.codechef.com/questions/81382/forestga-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/CHEFHCK2" target="_blank">CHEFHCK2</a>,<a href="https://discuss.codechef.com/questions/6650/chefhck2-editorial" target="_blank">editorial</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/ABCDEF" target="_blank">ABCDEF</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/NOTATRI" target="_blank">NOTATRI</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/SCALE" target="_blank">SCALE</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/SUMFOUR" target="_blank">SUMFOUR</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/SUBSUMS" target="_blank">SUBSUMS</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/ANARC05B" target="_blank">ANARC05B</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/RENT" target="_blank">RENT</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/PIE" target="_blank">PIE</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/MKUHAR" target="_blank">MKUHAR</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/SVADA" target="_blank">SVADA</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/SUBS" target="_blank">SUBS</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="foundation-mock">Mock Test:</h2>
+<ul>
+<li>Test 1 - <a target="_blank" href="https://www.codechef.com/FLMOCK01">codechef.com/FLMOCK01</a></li>
+<li>Test 2 - <a target="_blank" href="https://www.codechef.com/FLMOCK02">codechef.com/FLMOCK02</a></li>
+<li>Test 3 - <a target="_blank" href="https://www.codechef.com/FLMOCK03">codechef.com/FLMOCK03</a></li>
+<li>Test 4 - <a target="_blank" href="https://www.codechef.com/FLMOCK04">codechef.com/FLMOCK04</a></li>
+</ul>
+</div>
+<div id="advanced" class="inline-title"></div>
+<div class="collapsible"><a class="sub-title" href="https://www.codechef.com/certification/prepare#">Advanced</a>
+<p>This level is intended to test that the candidate has a very good grasp of algorithms and data structures, and can solve most problems that arise in practice. Candidates can expect problems from the following topics to come in the exam.</p>
+<h2 id="advanced-syllabus">Syllabus:</h2>
+<p>Everything in the Foundation Level, along with:</p>
+<ul>
+<li>Heaps (priority queue)</li>
+<li>Disjoint Set Union</li>
+<li>Segment Trees</li>
+<li>Binary Index Tree (Fenwick tree)</li>
+<li>Trees (traversals, tree dynamic programming)</li>
+<li>Finding Lowest Common Ancestors (O(log N) solution where N is number of nodes).</li>
+<li>Graph Algorithms: 					
+<ul>
+<li>Finding connected components and transitive closures.</li>
+<li>Shortest-path algorithms (Dijkstra, Bellman-Ford, Floyd-Warshall)</li>
+<li>Minimum spanning tree (Prim and Kruskal algorithms)</li>
+<li>Biconnectivity in undirected graphs (bridges, articulation points)</li>
+<li>Strongly connected components in directed graphs</li>
+<li>Topological Sorting</li>
+<li>Euler path, tour/cycle.</li>
+</ul>
+</li>
+<li>Modular arithmetic including division, inverse</li>
+<li>Amortized Analysis</li>
+<li>Divide and Conquer</li>
+<li>Advanced Dynamic Programming problems (excluding the dp optimizations which are added in expert level)</li>
+<li>Sieve of Eratosthenes</li>
+</ul>
+<h2 id="advanced-resources">Learning Resources:</h2>
+<ul>
+<li><b>Heaps (priority queue)</b> 
+<ul>
+<li>Resources 							
+<ul>
+<li><a href="https://www.cs.cmu.edu/~wlovas/15122-r11/lectures/15-priorqs.pdf" target="_blank">cs.cmu.edu</a></li>
+<li><a href="http://www.eecs.wsu.edu/~ananth/CptS223/Lectures/heaps.pdf" target="_blank">eecs.wsu.edu</a></li>
+<li><a href="http://www.geeksforgeeks.org/binary-heap/" target="_blank">geeksforgeeks.org</a></li>
+<li><a href="https://visualgo.net/en/heap" target="_blank">visualgo.net</a></li>
+<li><a href="https://www.iarcs.org.in/inoi/online-study-material/topics/heaps.php" target="_blank">iarcs.org.in</a> </li>
+</ul>
+</li>
+<li>Practice Problems 							
+<ul>
+<li>codechef.com - <a href="https://www.codechef.com/JULY17/problems/IPCTRAIN" target="_blank">IPCTRAIN</a>, <a href="https://discuss.codechef.com/questions/105180/ipctrain-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/ANUMLA" target="_blank">ANUMLA</a>, <a href="https://discuss.codechef.com/questions/53529/anumla-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/KSUBSUM" target="_blank">KSUBSUM</a>, <a href="https://discuss.codechef.com/questions/4018/ksubsum-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/RRATING" target="_blank">RRATING</a>, <a href="https://discuss.codechef.com/questions/1585/rrating-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/TSECJ05" target="_blank">TSECJ05</a>, <a href="https://discuss.codechef.com/questions/103875/chef-and-his-software-tsecj05-editorial" target="_blank">editorial</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/WEIRDFN/" target="_blank">WEIRDFN</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/CAPIMOVE" target="_blank">CAPIMOVE</a>, <a href="https://discuss.codechef.com/questions/90266/capimove-editorial" target="_blank">editorial</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/RMID2/" target="_blank">RMID2</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/LAZYPROG/" target="_blank">LAZYPROG</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/EXPEDI/" target="_blank">EXPEDI</a></li>
+<li><a href="http://acm.timus.ru/problem.aspx?space=1&amp;num=1306" target="_blank">acm.timus.ru</a></li>
+<li>baylor.edu - <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=onlinejudge&amp;page=show_problem&amp;problem=122" target="_blank">Maze Checking and Visualization</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/MOSTDIST" target="_blank">MOSTDIST</a>, <a href="https://discuss.codechef.com/questions/56239/mostdist-editorial" target="_blank">editorial</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><b>Disjoint Set Union</b> 
+<ul>
+<li>Resources 							
+<ul>
+<li><a href="https://www.topcoder.com/community/data-science/data-science-tutorials/disjoint-set-data-structures/" target="_blank">topcoder.com</a></li>
+<li><a href="https://sites.fas.harvard.edu/~libcs124/CS/lec6.pdf" target="_blank">harvard.edu</a></li>
+<li><a href="http://web.cs.ucdavis.edu/~amenta/w10/trevisanNotes.pdf" target="_blank">ucdavis.edu</a></li>
+<li><a href="https://visualgo.net/en/ufds" target="_blank">visualgo.net</a></li>
+</ul>
+</li>
+<li>Practice Problems 							
+<ul>
+<li>codechef.com - <a href="https://www.codechef.com/problems/GALACTIK" target="_blank">GALACTIK</a>, <a href="https://discuss.codechef.com/questions/18004/galactik-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/DISHOWN" target="_blank">DISHOWN</a>, <a href="https://discuss.codechef.com/questions/47241/dishown-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/JABO" target="_blank">JABO</a>, <a href="https://discuss.codechef.com/questions/3710/jabo-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/PARITREE" target="_blank">PARITREE</a>, <a href="https://discuss.codechef.com/questions/79920/paritree-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/FILLMTR" target="_blank">FILLMTR</a>, <a href="https://discuss.codechef.com/questions/109357/fillmtr-editorial" target="_blank">editorial</a></li>
+<li><a href="http://codeforces.com/problemset/problem/547/B" target="_blank">B. Mike and Feet</a></li>
+<li><a href="http://codeforces.com/contest/151/problem/D" target="_blank">D. Quantity of Strings</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/SETELE" target="_blank">SETELE</a>, <a href="https://discuss.codechef.com/questions/87909/setele-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/MAZE" target="_blank">MAZE</a>, <a href="https://discuss.codechef.com/questions/81591/maze-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/MAGICSTR" target="_blank">MAGICSTR</a>, <a href="https://discuss.codechef.com/questions/77347/magical-strings-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/MTRWY" target="_blank">MTRWY</a>, <a href="https://discuss.codechef.com/questions/66031/mtrwy-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/BIGOF01" target="_blank">BIGOF01</a>, <a href="https://discuss.codechef.com/questions/68454/bigof01-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/FIRESC" target="_blank">FIRESC</a>, <a href="https://discuss.codechef.com/questions/7269/firesc-editorial" target="_blank">editorial</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><b>Segment Trees</b> 
+<ul>
+<li>Resources 							
+<ul>
+<li><a href="http://wcipeg.com/wiki/Segment_tree" target="_blank">wcipeg.com</a></li>
+<li><a href="https://www.topcoder.com/community/data-science/data-science-tutorials/range-minimum-query-and-lowest-common-ancestor/#Segment_Trees" target="_blank">topcoder.com</a></li>
+<li><a href="https://kartikkukreja.wordpress.com/2014/11/09/a-simple-approach-to-segment-trees/" target="_blank">kartikkukreja.wordpress.com</a></li>
+<li><a href="https://visualgo.net/en/segmenttree" target="_blank">visualgo.net</a></li>
+<li><a href="https://www.iarcs.org.in/inoi/online-study-material/topics/segment-tree.php" target="_blank">iarcs.org.in</a></li>
+</ul>
+</li>
+<li>Practice Problems 							
+<ul>
+<li>spoj.com - <a href="http://www.spoj.pl/problems/GSS1/" target="_blank">GSS1</a></li>
+<li>spoj.com - <a href="http://www.spoj.pl/problems/GSS2/" target="_blank">GSS2</a></li>
+<li>codeforces.com - <a href="http://codeforces.com/blog/entry/15890" target="_blank">Classic Segment Tree</a> (Expert Level)</li>
+<li>spoj.com - <a href="http://www.spoj.pl/problems/IOPC1207/" target="_blank">IOPC1207</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/ORDERSET/" target="_blank">ORDERSET</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/HELPR2D2/" target="_blank">HELPR2D2</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/ANDROUND/" target="_blank">ANDROUND</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/HEAPULM/" target="_blank">HEAPULM</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/NICEDAY/" target="_blank">NICEDAY</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/YODANESS/" target="_blank">YODANESS</a></li>
+<li>spoj.com - <a href="http://www.spoj.pl/problems/DQUERY/" target="_blank">DQUERY</a></li>
+<li>spoj.com - <a href="http://www.spoj.pl/problems/KQUERY/" target="_blank">KQUERY</a></li>
+<li>spoj.com - <a href="http://www.spoj.pl/problems/FREQUENT/" target="_blank">FREQUENT</a></li>
+<li>spoj.com - <a href="http://www.spoj.pl/problems/GSS3/" target="_blank">GSS3</a></li>
+<li>spoj.com - <a href="http://www.spoj.pl/problems/GSS4" target="_blank">GSS4</a></li>
+<li>spoj.com - <a href="http://www.spoj.pl/problems/GSS5/" target="_blank">GSS5</a></li>
+<li>spoj.com - <a href="http://www.spoj.pl/problems/KGSS/" target="_blank">KGSS</a></li>
+<li>spoj.com - <a href="http://www.spoj.pl/problems/HELPR2D2/" target="_blank">HELPR2D2</a></li>
+<li>spoj.com - <a href="http://www.spoj.pl/problems/BRCKTS/" target="_blank">BRCKTS</a></li>
+<li>spoj.com - <a href="http://www.spoj.pl/problems/CTRICK/" target="_blank">CTRICK</a></li>
+<li>spoj.com - <a href="http://www.spoj.pl/problems/MATSUM/" target="_blank">MATSUM</a></li>
+<li>spoj.com - <a href="http://www.spoj.pl/problems/RATING/" target="_blank">RATING</a></li>
+<li>spoj.com - <a href="http://www.spoj.pl/problems/RRSCHED/" target="_blank">RRSCHED</a></li>
+<li>spoj.com - <a href="http://www.spoj.pl/problems/SUPPER/" target="_blank">SUPPER</a></li>
+<li>spoj.com - <a href="http://www.spoj.pl/problems/ORDERS/" target="_blank">ORDERS</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/LEBOBBLE" target="_blank">LEBOBBLE</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/QUERY" target="_blank">QUERY</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/TEMPLEQ" target="_blank">TEMPLEQ</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/DISUBSTR/" target="_blank">DISUBSTR</a></li>
+<li>spoj.com - <a href="http://www.spoj.pl/problems/QTREE/" target="_blank">QTREE</a></li>
+<li>spoj.com - <a href="http://www.spoj.pl/problems/QTREE2/" target="_blank">QTREE2</a></li>
+<li>spoj.com - <a href="http://www.spoj.pl/problems/QTREE3/" target="_blank">QTREE3</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/QTREE4/" target="_blank">QTREE4</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/QTREE5/" target="_blank">QTREE5</a></li>
+</ul>
+</li>
+<li>Problems on segment tree with lazy propagation 							
+<ul>
+<li>spoj.com - <a href="http://www.spoj.com/problems/HORRIBLE">HORRIBLE</a> (must do basic lazy propagation problem)</li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/LITE">LITE</a> (a nice lazy propagation problem)</li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/MULTQ3/">MULTQ3</a> (another nice lazy propagation problem)</li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/CHEFD">CHEFD</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/FUNAGP">FUNAGP</a> (a difficult lazy propagation problem.)</li>
+<li><a href="http://www.spoj.com/problems/RPAR/">RPAR</a> (a difficult and nice lazy propagation)</li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/ADDMUL">ADDMUL</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/SEGSQRSS/">SEGSQRSS</a> (a difficult lazy propagation problem)</li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/KGSS/">KGSS</a></li>
+<li>codeforces.com - <a href="http://codeforces.com/contest/52/problem/C">C. Circular RMQ</a></li>
+<li>codeforces.com - <a href="http://codeforces.com/contest/145/problem/E">E. Lucky Queries</a> (must do hard problem on lazy propagation)</li>
+<li>codeforces.com - <a href="http://codeforces.com/contest/558/problem/E">E. A Simple Task</a></li>
+<li>codeforces.com - <a href="http://codeforces.com/contest/446/problem/C">C. DZY Loves Fibonacci Numbers</a> (important problem to do, introduces some nice properties over lazy propagation)</li>
+<li>codeforces.com - <a href="http://codeforces.com/contest/438/problem/D">D. The Child and Sequence</a></li>
+<li>codeforces.com - <a href="http://codeforces.com/contest/121/problem/E">E. Lucky Array</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><b>Binary Index Tree (Fenwick tree)</b> 
+<ul>
+<li>Resources 							
+<ul>
+<li><a href="https://www.topcoder.com/community/data-science/data-science-tutorials/binary-indexed-trees/" target="_blank">topcoder.com</a></li>
+<li><a href="https://www.iarcs.org.in/inoi/online-study-material/topics/binary-index-tree.php" target="_blank">iarcs.org.in</a></li>
+<li><a href="https://visualgo.net/en/fenwicktree" target="_blank">visualgo.net</a></li>
+</ul>
+</li>
+<li>Practice Problems:<br>Please solve the problems mentioned in the above segment tree practice problems section. Note that usually, it's difficult to do range updates in binary indexed trees. Mostly, it is used for for range query and point update. However, you can check the following article for checking how some simple specific kind of range updates can be peformed on binary indexed tree (http://petr-mitrichev.blogspot.in/2013/05/fenwick-tree-range-updates.html). Note that range updates on BIT is not a part of the syllabus. 							
+<ul>
+<li>spoj.com - <a href="http://www.spoj.com/problems/INVCNT/" target="_blank">INVCNT</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/TRIPINV/" target="_blank">TRIPINV</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><b>Trees (traversals)</b> 
+<ul>
+<li>Resources 							
+<ul>
+<li><a href="https://www.slideshare.net/ecomputernotes/traversal-of-a-binary-tree-10682319" target="_blank">slideshare.net</a></li>
+<li><a href="https://www.iarcs.org.in/inoi/online-study-material/topics/dp-trees.php" target="_blank">iarcs.org.in</a></li>
+<li><a href="https://people.eecs.berkeley.edu/~vazirani/s99cs170/notes/dynamic2.pdf" target="_blank">berkeley.edu</a></li>
+</ul>
+</li>
+<li>Practice Problems 							
+<ul>
+<li>spoj.com - <a href="http://www.spoj.com/problems/TREEORD/" target="_blank">TREEORD</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><b>Finding Lowest Common Ancestors (O(log N) solution where N is number of nodes)</b> 
+<ul>
+<li>Resources 							
+<ul>
+<li><a href="https://www.topcoder.com/community/data-science/data-science-tutorials/range-minimum-query-and-lowest-common-ancestor/" target="_blank">topcoder.com</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><b>Depth First Search, Breadth First Search (Finding connected components and transitive closures)</b> 
+<ul>
+<li>Resources 							
+<ul>
+<li>geeksforgeeks.org - <a href="http://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/" target="_blank">Connected Components in an undirected graph</a></li>
+<li>geeksforgeeks.org - <a href="http://www.geeksforgeeks.org/transitive-closure-of-a-graph/" target="_blank">Transitive closure of a graph</a></li>
+<li>geeksforgeeks.org - <a href="http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/" target="_blank">Depth First Traversal or DFS for a Graph</a></li>
+<li>iarcs.org.in - <a href="https://www.iarcs.org.in/inoi/online-study-material/topics/graphs.php" target="_blank">Basic Graph Algorithms</a></li>
+<li>visualgo.net - <a href="https://visualgo.net/en/dfsbfs" target="_blank">Graph Traversal</a></li>
+<li>harvard.edu - <a href="https://sites.fas.harvard.edu/~libcs124/CS/lec4.pdf" target="_blank">Breadth-First Search</a></li>
+</ul>
+</li>
+<li>Practice Problems 							
+<ul>
+<li>codechef.com - <a href="https://www.codechef.com/problems/FIRESC" target="_blank">FIRESC</a>, <a href="https://discuss.codechef.com/questions/7269/firesc-editorial" target="_blank">editorial</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/BUGLIFE/" target="_blank">BUGLIFE</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/CAM5/" target="_blank">CAM5</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/GCPC11J/" target="_blank">GCPC11J</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/KFSTB/" target="_blank">KFSTB</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/PT07Y/" target="_blank">PT07Y</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/PT07Z/" target="_blank">PT07Z</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/LABYR1/" target="_blank">LABYR1</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/PARADOX/" target="_blank">PARADOX</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/PPATH/" target="_blank">PPATH</a> ;(must do bfs problem)</li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/ELEVTRBL/" target="_blank">ELEVTRBL</a> (bfs)</li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/QUEEN/" target="_blank">QUEEN</a> (bfs)</li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/SSORT/" target="_blank">SSORT</a> ;(cycles in a graph)</li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/ROBOTGRI/" target="_blank">ROBOTGRI</a> ;(bfs)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><b>Shortest-path algorithms (Dijkstra, Bellman-Ford, Floyd-Warshall)</b> 
+<ul>
+<li>Resources 							
+<ul>
+<li>geeksforgeeks.org - <a href="http://www.geeksforgeeks.org/greedy-algorithms-set-6-dijkstras-shortest-path-algorithm/" target="_blank">Dijkstra’s shortest path algorithm</a></li>
+<li>Iarcs.org.in - <a href="https://www.iarcs.org.in/inoi/online-study-material/topics/shortest-paths.php" target="_blank">Shortest paths</a></li>
+<li>Visualgo.net - <a href="https://visualgo.net/en/sssp" target="_blank">Single-Source Shortest Paths (SSSP)</a></li>
+</ul>
+</li>
+<li>Practice Problems 							
+<ul>
+<li>codechef.com - <a href="https://www.codechef.com/problems/DIGJUMP" target="_blank">DIGJUMP</a>, <a href="https://discuss.codechef.com/questions/44800/digjump-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/AMR14ROS/problems/AMR14B" target="_blank">AMR14B</a>, <a href="https://discuss.codechef.com/questions/61701/amr14b-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/INSQ15_F" target="_blank">INSQ15_F</a>, <a href="https://discuss.codechef.com/questions/74790/insq15_f-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/SPSHORT" target="_blank">SPSHORT</a>, <a href="https://discuss.codechef.com/questions/64224/spshort-editorial" target="_blank">editorial</a> (slightly difficult dijkstra's problem.)</li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/RIVPILE" target="_blank">RIVPILE</a>, <a href="https://discuss.codechef.com/questions/18188/rivpile-editorial" target="_blank">editorial</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/SHPATH/" target="_blank">SHPATH</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/TRAFFICN/" target="_blank">TRAFFICN</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/SAMER08A/" target="_blank">SAMER08A</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/MICEMAZE/" target="_blank">MICEMAZE</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/TRVCOST/" target="_blank">TRVCOST</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/PAIRCLST" target="_blank">PAIRCLST</a>, <a href="https://discuss.codechef.com/questions/79923/pairclst-editorial" target="_blank">editorial</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><b>Bellman Ford Algorithm</b> 
+<ul>
+<li>Resources 							
+<ul>
+<li>geeksforgeeks.org - <a href="http://www.geeksforgeeks.org/dynamic-programming-set-23-bellman-ford-algorithm/" target="_blank">Dynamic Programming - Bellman–Ford Algorithm</a></li>
+<li>compprog.wordpress.com - ;<a href="https://compprog.wordpress.com/2007/11/29/one-source-shortest-path-the-bellman-ford-algorithm/" target="_blank">One Source Shortest Path - Bellman-Ford Algorithm</a></li>
+</ul>
+</li>
+<li>Practice Problem 							
+<ul>
+<li>community.topcoder.com - <a href="https://community.topcoder.com/stat?c=problem_statement&amp;pm=10580" target="_blank">PeopleYouMayKnow</a></li>
+<li>codeforces.com - <a href="http://codeforces.com/problemset/problem/346/D" target="_blank">D. Robot Control</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/ARBITRAG/" target="_blank">ARBITRAG - Arbitrage</a> ;(Floyd Warshall)</li>
+<li>community.topcoder.com - <a href="http://community.topcoder.com/stat?c=problem_statement&amp;pm=10736" target="_blank">NetworkSecurity</a> ;(Floyd Warshall)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><b>Minimum spanning tree (Prim and Kruskal algorithms)</b> 
+<ul>
+<li>Resources 							
+<ul>
+<li>algs4.cs.princeton.edu - <a href="http://algs4.cs.princeton.edu/lectures/43MinimumSpanningTrees.pdf" target="_blank">Minimum Spanning Trees</a></li>
+<li>iarcs.org.in - <a href="https://www.iarcs.org.in/inoi/online-study-material/topics/spanning-trees.php" target="_blank">Spanning trees</a></li>
+<li>visualgo.net - <a href="https://visualgo.net/en/mst" target="_blank">Spanning Tree</a></li>
+</ul>
+</li>
+<li>Practice Problem 							
+<ul>
+<li>spoj.com - <a href="http://www.spoj.com/problems/MST/" target="_blank">MST</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/NITTROAD/" target="_blank">NITTROAD</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/BLINNET/" target="_blank">BLINNET</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/CSTREET/" target="_blank">CSTREET</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/HIGHWAYS/" target="_blank">HIGHWAYS</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/IITWPC4I/" target="_blank">IITWPC4I</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/MSTQS" target="_blank">MSTQS</a>, <a href="https://discuss.codechef.com/questions/89653/mstqs-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/CHEFGAME" target="_blank">CHEFGAME</a>, <a href="https://discuss.codechef.com/questions/8119/chefgame-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/GALACTIK" target="_blank">GALACTIK</a>, <a href="https://discuss.codechef.com/questions/18004/galactik-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/GOOGOL03" target="_blank">GOOGOL03</a>, <a href="https://discuss.codechef.com/questions/70187/googol03-editorial" target="_blank">editorial</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/KOICOST/" target="_blank">KOICOST</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><b>Biconnectivity in undirected graphs (bridges, articulation points)</b> 
+<ul>
+<li>Resources 							
+<ul>
+<li>e-maxx-eng.appspot.com - <a href="https://e-maxx-eng.appspot.com/graph/bridge-searching.html" target="_blank">Finding Bridges in a Graph</a></li>
+<li>iarcs.org.in - <a href="https://www.iarcs.org.in/inoi/online-study-material/topics/articulation-points.php" target="_blank">Articulation Points</a></li>
+<li>pisces.ck.tp.edu.tw - <a href="http://pisces.ck.tp.edu.tw/~peng/index.php?action=showfile&amp;file=fb1f19a9be617037cb419c5d454b184bead47e243" target="_blank">Articulation Points</a></li>
+</ul>
+</li>
+<li>Practice Problem 							
+<ul>
+<li>uva.onlinejudge.org - <a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&amp;page=show_problem&amp;problem=251" target="_blank">Network</a></li>
+<li>icpcarchive.ecs.baylor.edu - <a href="https://icpcarchive.ecs.baylor.edu/index.php?option=onlinejudge&amp;page=show_problem&amp;problem=722" target="_blank">Building Bridges</a></li>
+<li>uva.onlinejudge.org - <a href="https://uva.onlinejudge.org/index.php?option=onlinejudge&amp;page=show_problem&amp;problem=1140" target="_blank">Tourist Guide</a></li>
+<li>acm.tju.edu.cn - <a href="http://acm.tju.edu.cn/toj/showp1026.html" target="_blank">Network</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/EC_P/" target="_blank">EC_P - Critical Edges</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/SUBMERGE/" target="_blank">SUBMERGE - Submerging Islands</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/POLQUERY/" target="_blank">POLQUERY - Police Query</a></li>
+<li>codeforces.com - <a href="http://codeforces.com/problemset/problem/193/A" target="_blank">A. Cutting Figure</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><b>Strongly connected components in directed graphs</b> 
+<ul>
+<li>Resources 							
+<ul>
+<li>iarcs.org.in - <a href="https://www.iarcs.org.in/inoi/online-study-material/topics/scc.php" target="_blank">Strongly connected components</a></li>
+<li>theory.stanford.edu - <a href="http://theory.stanford.edu/~tim/w11/l/scc.pdf" target="_blank">Strongly Connected Components</a></li>
+</ul>
+</li>
+<li>Practice Problem 							
+<ul>
+<li>spoj.com - <a href="http://www.spoj.com/problems/ANTTT/" target="_blank">ANTTT</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/CAPCITY/" target="_blank">CAPCITY</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/SUBMERGE/" target="_blank">SUBMERGE</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/MCO16405" target="_blank">MCO16405</a>, <a href="https://discuss.codechef.com/questions/91585/mco16405-editorial" target="_blank">editorial</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/BOTTOM/" target="_blank">BOTTOM</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/BREAK/" target="_blank">BREAK</a></li>
+<li>community.topcoder.com - <a href="https://community.topcoder.com/stat?c=problem_statement&amp;pm=8488&amp;rd=11125" target="_blank">Marble Collection Game</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><b>Topological Sorting</b> 
+<ul>
+<li>Resources 							
+<ul>
+<li>geeksforgeeks.org - <a href="http://www.geeksforgeeks.org/topological-sorting/" target="_blank">Topological Sorting</a></li>
+</ul>
+</li>
+<li>Practice Problem 							
+<ul>
+<li>spoj.com - <a href="http://www.spoj.com/problems/TOPOSORT/" target="_blank">TOPOSORT</a> ;</li>
+<li>codeforces.com - <a href="http://codeforces.com/contest/510/problem/C" target="_blank">C. Fox And Names</a> ;</li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/RRDAG" target="_blank">RRDAG</a>, <a href="https://discuss.codechef.com/questions/47983/rrdag-editorial" target="_blank">editorial</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/RPLA/" target="_blank">RPLA</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/CL16BF" target="_blank">CL16BF</a> (topological sort with dp), <a href="https://discuss.codechef.com/questions/85994/cl16bf-editorial" target="_blank">editorial</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/MAKETREE/" target="_blank">MAKETREE</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><b>Euler path, tour/cycle.</b> 
+<ul>
+<li>Resources 							
+<ul>
+<li>math.ku.edu - <a href="https://www.math.ku.edu/~jmartin/courses/math105-F11/Lectures/chapter5-part2.pdf" target="_blank">Euler Paths and Euler Circuits</a></li>
+</ul>
+</li>
+<li>Practice Problem 							
+<ul>
+<li>spoj.com - <a href="http://www.spoj.com/problems/WORDS1/" target="_blank">WORDS1</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/CHEFPASS" target="_blank">CHEFPASS</a>, <a href="https://discuss.codechef.com/questions/2096/chefpass-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/TOURISTS" target="_blank">TOURISTS</a>, <a href="https://discuss.codechef.com/questions/90320/tourists-editorial" target="_blank">editorial</a></li>
+<li>codeforces.com - <a href="http://codeforces.com/contest/500/problem/D" target="_blank">D. New Year Santa Network</a></li>
+<li><a href="http://codeforces.com/contest/475/problem/B" target="_blank">B. Strongly Connected City</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/PEOPLOVE" target="_blank">PEOPLOVE</a></li>
+<li>codeforces.com - <a href="http://codeforces.com/contest/508/problem/D" target="_blank">D. Tanya and Password</a></li>
+<li>codeforces.com - <a href="http://codeforces.com/contest/723/problem/E" target="_blank">E. One-Way Reform</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/GCPC11C/" target="_blank">GCPC11C</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/MAKETREE/" target="_blank">MAKETREE</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><b>Modular arithmetic including division, inverse</b> 
+<ul>
+<li>Resources 							
+<ul>
+<li>codechef.com - <a href="https://discuss.codechef.com/questions/20451/a-tutorial-on-fast-modulo-multiplication-exponential-squaring" target="_blank">Fast Modulo Multiplication (Exponential Squaring)</a></li>
+<li>codechef.com - <a href="https://discuss.codechef.com/questions/3869/best-known-algos-for-calculating-ncr-m" target="_blank">Best known algos for calculating nCr % M</a> ;(only for expert level)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><b>Amortized Analysis</b> 
+<ul>
+<li>Resources 							
+<ul>
+<li>ocw.mit.edu - <a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-design-and-analysis-of-algorithms-spring-2012/lecture-notes/MIT6_046JS12_lec11.pdf" target="_blank">Amortized Analysis</a></li>
+<li>wikipedia.org - <a href="https://en.wikipedia.org/wiki/Amortized_analysis" target="_blank">Amortized Analysis</a></li>
+<li>iiitdm.ac.in - <a href="http://www.iiitdm.ac.in/old/Faculty_Teaching/Sadagopan/pdf/ADSA/amortized-analysis.pdf" target="_blank">Amortized Analysis</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><b>Divide and Conquer</b> 
+<ul>
+<li>Resources 							
+<ul>
+<li>cs.cmu.edu - <a href="http://www.cs.cmu.edu/afs/cs/academic/class/15210-s12/www/lectures/lecture02.pdf" target="_blank">Divide-and-Conquer and Recurrences</a></li>
+<li>geeksforgeeks.org - <a href="http://www.geeksforgeeks.org/category/divide-and-conquer/" target="_blank">Divide-and-Conquer</a></li>
+</ul>
+</li>
+<li>Practice Problem 							
+<ul>
+<li>codechef.com - <a href="https://www.codechef.com/problems/MRGSRT" target="_blank">MRGSRT</a>, <a href="https://discuss.codechef.com/questions/70773/mrgsrt-editorial" target="_blank">editorial</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/HISTOGRA/" target="_blank">HISTOGRA</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/TASTYD" target="_blank">TASTYD</a>, <a href="https://discuss.codechef.com/questions/15957/tastyd-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/RESTPERM" target="_blank">RESTPERM</a>, <a href="https://discuss.codechef.com/questions/86763/restperm-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/ACM14KP1" target="_blank">ACM14KP1</a>, <a href="https://discuss.codechef.com/questions/56980/acm14kp1-editorial" target="_blank">editorial</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><b>Advanced Dynamic Programming</b> problems (excluding the dp optimizations which are added in expert level, Please go through the basic DP resources and problems mentioned in foundation level resource.) 					
+<ul>
+<li>Resources 							
+<ul>
+<li>apps.topcoder.com - <a href="http://apps.topcoder.com/forums/?module=Thread&amp;threadID=697369&amp;start=0" target="_blank">Commonly used DP state domains</a></li>
+<li>apps.topcoder.com - <a href="http://apps.topcoder.com/forums/?module=Thread&amp;threadID=700080&amp;start=0" target="_blank">Introducing Dynamic Programming</a></li>
+<li>apps.topcoder.com - <a href="http://apps.topcoder.com/forums/?module=Thread&amp;threadID=697925&amp;start=0" target="_blank">Optimizing DP solution</a></li>
+<li>codeforces.com - <a href="http://codeforces.com/blog/entry/337" target="_blank">DP over Subsets and Paths</a></li>
+</ul>
+</li>
+<li>Problems for Advanced DP 							
+<ul>
+<li>spoj.com - <a href="http://www.spoj.com/problems/HIST2/" target="_blank">HIST2</a> ;(dp bitmask)</li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/LAZYCOWS/" target="_blank">LAZYCOWS</a> ;(dp bitmask)</li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/TRSTAGE/" target="_blank">TRSTAGE</a> ;(dp bitmask)</li>
+<li>spoj.com - <a href="http://www.spoj.pl/problems/MARTIAN/" target="_blank">MARTIAN</a></li>
+<li>spoj.com - <a href="http://www.spoj.pl/problems/SQRBR/" target="_blank">SQRBR</a></li>
+<li>spoj.com - <a href="http://www.spoj.pl/problems/ACMAKER/" target="_blank">ACMAKER</a></li>
+<li>spoj.com - <a href="http://www.spoj.pl/problems/AEROLITE/" target="_blank">AEROLITE</a></li>
+<li>spoj.com - <a href="https://www.spoj.pl/problems/BACKPACK/" target="_blank">BACKPACK</a></li>
+<li>spoj.com - <a href="http://www.spoj.pl/problems/COURIER/" target="_blank">COURIER</a></li>
+<li>spoj.com - <a href="http://www.spoj.pl/problems/DP/" target="_blank">DP</a></li>
+<li>spoj.com - <a href="http://www.spoj.pl/problems/EDIST/" target="_blank">EDIST</a></li>
+<li>spoj.com - <a href="http://www.spoj.pl/problems/KRECT/" target="_blank">KRECT</a></li>
+<li>spoj.com - <a href="http://www.spoj.pl/problems/GNY07H/" target="_blank">GNY07H</a></li>
+<li>spoj.com - <a href="http://www.spoj.pl/problems/LISA/" target="_blank">LISA</a></li>
+<li>spoj.com - <a href="http://www.spoj.pl/problems/MINUS/" target="_blank">MINUS</a></li>
+<li>spoj.com - <a href="http://www.spoj.pl/problems/NAJKRACI/" target="_blank">NAJKRACI</a></li>
+<li>spoj.com - <a href="http://www.spoj.pl/problems/PHIDIAS/" target="_blank">PHIDIAS</a></li>
+<li>spoj.com - <a href="http://www.spoj.pl/problems/PIGBANK/" target="_blank">PIGBANK</a></li>
+<li>spoj.com - <a href="http://www.spoj.pl/problems/PT07X/" target="_blank">PT07X</a></li>
+<li>spoj.com - <a href="http://www.spoj.pl/problems/VOCV/" target="_blank">VOCV</a></li>
+<li>spoj.com - <a href="http://www.spoj.pl/problems/TOURIST/" target="_blank">TOURIST</a></li>
+<li>spoj.com - <a href="http://www.spoj.pl/problems/MKBUDGET" target="_blank">MKBUDGET</a></li>
+<li>spoj.com - <a href="http://www.spoj.pl/problems/MMAXPER" target="_blank">MMAXPER</a></li>
+<li>spoj.com - <a href="http://www.spoj.pl/problems/ANARC07G" target="_blank">ANARC07G</a></li>
+<li>spoj.com - <a href="http://www.spoj.pl/problems/MENU" target="_blank">MENU</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/RENT/" target="_blank">RENT</a> ;(dp with segment tree/BIT)</li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/INCSEQ/" target="_blank">INCSEQ</a> ;(dp with segment tree/BIT)</li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/INCDSEQ/" target="_blank">INCDSEQ</a> ;(dp with segment tree/BIT)</li>
+<li>You can solve some advanced problems from</li>
+<li>codeforces.com - <a href="http://codeforces.com/blog/entry/325" target="_blank">Dynamic Programming Type</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><b>Sieve of Eratosthenes</b> 
+<ul>
+<li>Resources: 							
+<ul>
+<li>codechef.com - <a href="https://discuss.codechef.com/questions/54846/please-proofread-the-atricle-for-tutorial-section-on-sieve-methods" target="_blank">Sieve Methods</a></li>
+</ul>
+</li>
+<li>Practice Problems 							
+<ul>
+<li>spoj.com - <a href="http://www.spoj.com/problems/TDKPRIME/" target="_blank">TDKPRIME</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/TDPRIMES/" target="_blank">TDPRIMES</a></li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/ODDDIV/" target="_blank">ODDDIV</a> ;(sieve + binary search)</li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/NDIVPHI/" target="_blank">NDIVPHI</a> ;O(N) prime testing algorithm)</li>
+<li>spoj.com - <a href="http://www.spoj.com/problems/DIV/" target="_blank">DIV</a> ;(divisor sieve)</li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/LEVY" target="_blank">LEVY</a>, <a href="https://discuss.codechef.com/questions/8115/levy-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/PRETNUM" target="_blank">PRETNUM</a>, <a href="https://discuss.codechef.com/questions/28909/pretnum-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/KPRIME" target="_blank">KPRIME</a>, <a href="https://discuss.codechef.com/questions/17915/kprime-editorial" target="_blank">editorial</a></li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/DIVMAC" target="_blank">DIVMAC</a>, <a href="https://discuss.codechef.com/questions/84917/divmac-editorial-unofficial" target="_blank">editorial</a> (segment tree with sieve)</li>
+<li>codechef.com - <a href="https://www.codechef.com/problems/PPERM" target="_blank">PPERM</a>, <a href="https://discuss.codechef.com/questions/2555/pperm-editorial" target="_blank">editorial</a> ;(a bit advanced sieve application)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><b>General</b> 
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLXFMmlk03Dt7Q0xr1PIAriY5623cKiH7V" target="_blank">Stanford Algoriths 1</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLXFMmlk03Dt5EMI2s2WQBsLsZl7A5HEK6" target="_blank">Stanford Algoriths 2</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="advanced-mock">Mock Test:</h2>
+<ul>
+<li>Test 1 - <a target="_blank" href="https://www.codechef.com/ALMOCK01">codechef.com/ALMOCK01</a></li>
+<li>Test 2 - <a target="_blank" href="https://www.codechef.com/ALMOCK02">codechef.com/ALMOCK02</a></li>
+<li>Test 3 - <a target="_blank" href="https://www.codechef.com/ALMOCK03">codechef.com/ALMOCK03</a></li>
+<li>Test 4 - <a target="_blank" href="https://www.codechef.com/ALMOCK04">codechef.com/ALMOCK04</a></li>
+</ul>
+</div>
+<div id="expert" class="inline-title"></div>
+<div class="collapsible"><a class="sub-title" href="https://www.codechef.com/certification/prepare#">Expert</a>
+<p>This level is intended to test that the candidate is an expert in algorithms and data structures, and has a deep understanding of the topics. Candidates can expect problems from the following topics to come in the exam.</p>
+<h2 id="expert-syllabus">Syllabus:</h2>
+<p>The syllabus for Expert Level is open-ended. Everything in Advanced Level will be included, along with:</p>
+<ul>
+<li>Treaps</li>
+<li>Persistent Data Structures</li>
+<li>HLD</li>
+<li>Centroid Decomposition</li>
+<li>Computational Geometry</li>
+<li>Fast Fourier Transforms</li>
+<li>Game Theory</li>
+<li>Gaussian Elimination</li>
+<li>Dynamic Programming Optimizations</li>
+<li>Advanced String algorithms (Tries, KMP, Aho-Corasik, Suffix arrays, Suffix trees)</li>
+<li>Flows (Max-Flow, Min Cost Max Flow)</li>
+</ul>
+<h2 id="expert-resources">Learning Resources:</h2>
+<ul>
+<li>The resources are listed <a href="https://discuss.codechef.com/questions/121107/programming-contest-detailed-syllabus-along-with-example-problems">here</a>.</li>
+</ul>
+<h2 id="expert-mock">Mock Test:</h2>
+<ul>
+<li>Coming Soon</li>
+</ul>
+<ul>
+</ul>
+<div class="well black-border-bottom">Note: These links have been curated to help in preparation for the exams, and also to help the community in general. But if you own some of the material linked to, and you wouldn’t like them to be here, please contact us, and we will remove it.</div>
+<ul>
+</ul>
+</div>  </div>
+
+  </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </td>
+    </tr>
+</tbody></table>
+
+    <div class="footer-container">
+        <div id="footer" class="wrapper">
+            <div class="content clear-block">
+                <div id="block-block-78" class="block block-block block-header">
+  <div class="content">
+        <script language="javascript" type="text/javascript">
+  function savedServerOffset(ts){
+    ts = ts*1000;
+    now = Date.now();
+    offset = now - ts;
+    return offset;
+  }
+  function formatTime(offset) {
+   ts = Date.now() - offset;
+   now = new Date(ts);
+   
+   localtime = new Date();
+   hour = now.getHours();
+   min = now.getMinutes();
+   sec = now.getSeconds();
+   
+   if (min <= 9) {
+    min = "0" + min;
+  }
+  if (sec <= 9) {
+    sec = "0" + sec;
+  }
+  if (hour > 12) {
+    hour = hour - 12;
+    add = " PM";
+  } else {
+    hour = hour;
+    add = " AM";
+  }
+  if (hour == 12) {
+    add = " PM";
+  }
+  if (hour == 00) {
+    hour = "12";
+  }
+  
+  $('#server-time').html(((hour<=9) ? "0" + hour : hour) + ":" + min + ":" + sec + add);
+  
+  nextSec = (now.getTime() + 1000);
+  
+  setTimeout("formatTime("+offset+")", 1000);
+}
+function getDtTimeZone() 
+{
+  var rightNow = new Date();
+  var toDay = new Date(rightNow.getFullYear(), 0, 1, 0, 0, 0, 0);
+  var temp = toDay.toGMTString();
+  var date2 = new Date(temp.substring(0, temp.lastIndexOf(" ") -1));
+  var stdTime = (toDay - date2) / (1000 * 60 * 60);
+  return stdTime;
+}
+/*var d=new Date();
+$.ajax({
+url: '/umtza',
+type:'POST',
+data: 'umtza='+d.toString(),
+});
+*/
+</script>
+<div id="disclaimer">CodeChef is a non-commercial competitive programming community</div>
+<div class="inner-wrapper">
+  <div class="cols-2">
+    <div id="secondary-nav">
+      <ul>
+        <li><a href="http://www.codechef.com/aboutus/">About CodeChef</a></li>
+        <li><a target="_blank" href="http://www.directi.com/">About Directi</a></li>
+        <li><a href="http://www.codechef.com/ceoscorner/">CEO's Corner</a></li>
+        <li><a href="http://www.codechef.com/c-programming">C-Programming</a></li>
+        <li><a href="http://www.codechef.com/Programming-Languages">Programming Languages</a></li>
+        <li><a href="http://www.codechef.com/contactus">Contact Us</a></li>
+      </ul>
+    </div>
+    <div id="copyright" class="cols-2">© 2009 <a style="color: rgb(0, 0, 0);" href="http://www.directi.com/">Directi Group</a>.  All Rights Reserved.  CodeChef uses SPOJ © by <a style="color: rgb(0, 0, 0);" href="http://www.sphere-research.com/">Sphere Research Labs</a></div>
+    <div id="copyright-msg">In order to report copyright violations of any kind, send in an email to <a href="mailto:copyright@codechef.com">copyright@codechef.com</a></div>
+  </div>
+  <div align="right" class="cols-2-right" style="float:right;">
+    <div id="sponsor-strip"><a target="_blank" href="http://www.directi.com/"><img style="width:120px" alt="CodeChef a product of Directi" src="./Prepare _ CodeChef_files/directi-logo.png"></a><br>
+      <span>The time now is: <span id="server-time">03:47:23 PM</span></span><br>
+      <span>Your IP: <span>73.228.122.88</span></span>
+      <script language="javascript">
+        formatTime(savedServerOffset('1520117200'));
+      </script>    </div>
+  </div>
+</div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-53602-42']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+<!-- Google Code for Visitors that do not sign-up Remarketing List -->
+<script type="text/javascript">
+  /* <![CDATA[ */
+  var google_conversion_id = 1066618556;
+  var google_conversion_language = "en";
+  var google_conversion_format = "3";
+  var google_conversion_color = "666666";
+  var google_conversion_label = "gbUUCPTlhAIQvJ3N_AM";
+  var google_conversion_value = 0;
+  /* ]]> */
+</script>
+<script type="text/javascript" src="./Prepare _ CodeChef_files/conversion.js">
+</script>
+<noscript>
+  &lt;div style="display:inline;"&gt;
+    &lt;img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/1066618556/?label=gbUUCPTlhAIQvJ3N_AM&amp;amp;guid=ON&amp;amp;script=0"/&gt;
+  &lt;/div&gt;
+</noscript>
+
+<!-- Google Code for RM codechef Remarketing List -->
+<script type="text/javascript">
+  /* <![CDATA[ */
+  var google_conversion_id = 968176136;
+  var google_conversion_language = "en";
+  var google_conversion_format = "3";
+  var google_conversion_color = "ffffff";
+  var google_conversion_label = "iDk7CPDZ7wMQiOTUzQM";
+  var google_conversion_value = 0;
+  /* ]]> */
+</script>
+<script type="text/javascript" src="./Prepare _ CodeChef_files/conversion.js">
+</script>
+<noscript>
+  &lt;div style="display:inline;"&gt;
+    &lt;img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/968176136/?label=iDk7CPDZ7wMQiOTUzQM&amp;amp;guid=ON&amp;amp;script=0"/&gt;
+  &lt;/div&gt;
+</noscript>
+
+<!-- Google Code for Snackdown -->
+<script type="text/javascript">
+  /* <![CDATA[ */
+  var google_conversion_id = 960072479;
+  var google_custom_params = window.google_tag_params;
+  var google_remarketing_only = true;
+  /* ]]> */
+</script>
+<script type="text/javascript" src="./Prepare _ CodeChef_files/conversion.js">
+</script>
+<noscript>
+  &lt;div style="display:inline;"&gt;
+    &lt;img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/960072479/?value=0&amp;amp;guid=ON&amp;amp;script=0"/&gt;
+  &lt;/div&gt;
+</noscript>
+
+
+<!-- Google Code for .tech domain -->
+<script type="text/javascript">
+  /* <![CDATA[ */
+  var google_conversion_id = 951716012;
+  var google_conversion_label = "OiW5COr2yFsQrJHoxQM";
+  var google_custom_params = window.google_tag_params;
+  var google_remarketing_only = true;
+  /* ]]> */
+</script>
+<script type="text/javascript" src="./Prepare _ CodeChef_files/conversion.js">
+</script>
+<noscript>
+  &lt;div style="display:inline;"&gt;
+    &lt;img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/951716012/?value=1.00&amp;amp;currency_code=USD&amp;amp;label=OiW5COr2yFsQrJHoxQM&amp;amp;guid=ON&amp;amp;script=0"/&gt;
+  &lt;/div&gt;
+</noscript>
+
+<!-- Start Alexa Certify Javascript -->
+<script type="text/javascript">
+  _atrk_opts = { atrk_acct:"q16Cj1a8gN00iz", domain:"codechef.com",dynamic: true};
+  (function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript>&lt;img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=q16Cj1a8gN00iz" style="display:none" height="1" width="1" alt="" /&gt;</noscript>
+<!-- End Alexa Certify Javascript -->  
+
+<div class="cc-footer-seo">
+  <style scoped="">
+  .cc-footer-seo table tr th {
+   font-weight: bold;
+   font-size: 13px;
+   border:0px;
+   padding-left: 0px;
+   text-decoration: underline;
+ }
+ .cc-footer-seo table tr td {
+   font-size: 12px;
+   padding-left: 0px;
+ }
+</style>
+<span><a href="https://www.codechef.com/">CodeChef</a> - A Platform for Aspiring Programmers</span>
+<p>CodeChef was created as a platform to help programmers make it big in the world of algorithms, <strong>computer programming</strong> and <strong>programming contests</strong>. At CodeChef we work hard to revive the geek in you by hosting a <strong>programming contest</strong> at the start of the month and another smaller programming challenge in the middle of the month. We also aim to have training sessions and discussions related to <strong>algorithms, binary search</strong>, technicalities like <strong>array size</strong> and the likes. Apart from providing a platform for <strong>programming competitions</strong>, CodeChef also has various algorithm tutorials and forum discussions to help those who are new to the world of <strong>computer programming</strong>.</p>
+<p></p>
+<span><a href="https://www.codechef.com/problems/easy">Practice Section</a> - A Place to hone your 'Computer Programming Skills'</span>
+<p>Try your hand at one of our many practice problems and submit your solution in a language of your choice. Our <strong>programming contest</strong> judge accepts solutions in over 35+ programming languages. Preparing for coding contests were never this much fun! Receive points, and move up through the CodeChef ranks. Use our practice section to better prepare yourself for the multiple <strong>programming challenges</strong> that take place through-out the month on CodeChef. </p>
+<p></p>
+<span><a href="https://www.codechef.com/contests/">Compete</a> - Monthly Programming Contests and Cook-offs</span>
+<p>Here is where you can show off your <strong>computer programming</strong> skills. Take part in our 10 day long monthly <strong>coding contest</strong> and the shorter format Cook-off <strong>coding contest</strong>. Put yourself up for recognition and win great prizes. Our <strong>programming contests</strong> have prizes worth up to INR 20,000 (for Indian Community), $700 (for Global Community) and lots more CodeChef goodies up for grabs.</p>
+<p></p><br>
+<table border="0" cellspacing="5" cellpadding="5" width="60%">
+  <tbody><tr>
+    <th>Programming Tools</th>
+    <th>Practice Problems</th>
+    <th>Initiatives</th>
+  </tr>
+  <tr>
+    <td><a href="https://www.codechef.com/ide">Online IDE</a></td>
+    <td><a href="https://www.codechef.com/problems/easy">Easy</a></td>
+    <td><a href="http://www.codechef.com/goforgold">Go for Gold</a></td>
+    <td><a href="http://codechef.com/terms">Terms of Service</a></td>
+  </tr>
+  <tr>
+    <td><a href="http://www.codechef.com/contests#FurtureContests">Upcoming Coding Contests</a></td>
+    <td><a href="https://www.codechef.com/problems/medium">Medium</a></td>
+    <td><a href="http://www.codechef.com/school">CodeChef for Schools</a></td>
+    <td><a href="http://codechef.com/privacy-policy">Privacy Policy</a></td>
+  </tr>
+  <tr>
+    <td><a href="http://www.codechef.com/hostyourcontest">Contest Hosting</a></td>
+    <td><a href="https://www.codechef.com/problems/hard">Hard</a></td>
+    <td><a href="http://www.codechef.com/campus_chapter/about">Campus Chapters</a></td>
+    <td><a href="http://codechef.com/refund-policy">Refund Policy</a></td>
+  </tr>
+  <tr>
+    <td><a href="http://www.codechef.com/problemsetting">Problem Setting</a></td>
+    <td><a href="https://www.codechef.com/problems/challenge">Challenge</a></td>
+    <td></td>
+    <td><a href="https://discuss.codechef.com/questions/18662/does-codechef-have-any-code-of-conduct">Code of Conduct</a></td>
+  </tr>
+  <tr>
+    <td><a href="http://www.codechef.com/wiki/tutorials">CodeChef Tutorials</a></td>
+    <td><a href="https://www.codechef.com/problems/extcontest">Peer</a></td>
+    <td></td>
+    <td><a href="http://www.codechef.com/bug-bounty-program">Bug Bounty Program</a></td>
+  </tr>
+  <tr>
+    <td><a href="https://www.codechef.com/wiki">CodeChef Wiki</a></td>
+    <td><a href="https://www.codechef.com/problems/school">School</a></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><a href="https://www.codechef.com/wiki/faq">FAQ's</a></td>
+    <td></td>
+  </tr>
+</tbody></table>
+<p></p>
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '460995904241257'); 
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+   &lt;img height="1" width="1" 
+   src="https://www.facebook.com/tr?id=460995904241257&amp;ev=PageView
+   &amp;noscript=1"/&gt;
+ </noscript>
+ <!-- End Facebook Pixel Code -->
+
+ <!-- Linkedin Code -->
+ <script type="text/javascript"> _linkedin_data_partner_id = "93463"; </script><script type="text/javascript"> (function(){var s = document.getElementsByTagName("script")[0]; var b = document.createElement("script"); b.type = "text/javascript";b.async = true; b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js"; s.parentNode.insertBefore(b, s);})(); </script> <noscript> &lt;img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=93463&amp;fmt=gif" /&gt; </noscript>
+<!-- Linkedin Code End -->  </div>
+</div>
+<div id="block-block-76" class="block block-block block-header">
+  <div class="content">
+        <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:167687,hjsv:5};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+</script>  </div>
+</div>
+<div id="block-block-51" class="block block-block block-header">
+  <div class="content">
+        <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>  </div>
+</div>
+<div id="block-block-127" class="block block-block block-header">
+  <div class="content">
+        <style>
+    .notifheader-container{
+        width: 964px;
+        margin: 0 auto;
+        display: table;
+    }
+    .notifheader-container a{
+        text-decoration: underline;
+    }
+    .notifheader-container ul.timer2{
+        float: right;
+        margin-top: -14px;
+        position: relative;
+        right: 150px;
+    }
+    .notifheader-container ul.timer2 li{
+        float: left;
+        list-style: none !important;
+        font-size: 11px !important;
+        padding-left: 10px;
+        margin-left: 0 !important;
+    }
+    .notifheader-container ul.timer2 li span{
+        display: block;
+        line-height: 1.3;
+        font-size: 16px;
+        font-weight: bold;
+    }
+     #notifheader-close{
+        margin-top:-23px;
+    }
+    
+</style>
+<script>
+    $(document).ready(function () {
+        var start_date = [2018, 01, 28, 00, 00, 00];
+        var start_date_obj = new Date(start_date[0], (start_date[1] - 1), start_date[2], start_date[3], start_date[4], start_date[5]);
+        GetCount("March 04, 2018 04: 16: 40 ");
+        var notifheader = $('#notifheader').remove();
+        $('body').prepend(notifheader);
+        function GetCount(ts) {
+            var time_left = '';
+            var current_date_obj = new Date(ts);
+            var diff_in_time1 = start_date_obj.getTime() - current_date_obj.getTime();
+
+            var time_left_for_start = [diff_in_time1];
+
+            var days = 0;
+            var hours = 0;
+            var mins = 0;
+            var secs = 0;
+            var out = "";
+            time_left_for_start[0] = Math.floor(time_left_for_start[0] / 1000);
+            days = Math.floor(time_left_for_start[0] / 86400);
+            time_left_for_start[0] = time_left_for_start[0] % 86400;
+
+            hours = Math.floor(time_left_for_start[0] / 3600);
+            time_left_for_start[0] = time_left_for_start[0] % 3600;
+
+            mins = Math.floor(time_left_for_start[0] / 60);
+            time_left_for_start[0] = time_left_for_start[0] % 60;
+
+            secs = Math.floor(time_left_for_start[0]);
+
+            $('#clock-day-left-2').html(String(days));
+            $('#clock-hrs-left-2').html(String(hours));
+            $('#clock-min-left-2').html(String(mins));
+            $('#clock-sec-left-2').html(String(secs));
+
+            setTimeout(function () {
+                GetCount((new Date()).getTime() + (((new Date()).getTimezoneOffset()) * 60 * 1000) + 19800000);
+            }, 1000);
+        }
+    });
+</script>  </div>
+</div>
+            </div>
+        </div>
+    </div><!--.footer-container-->
+</div></center>
+</center><div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./Prepare _ CodeChef_files/Nh1oH0K63yz.html" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","355751851552349");fbq("track","PageView");</script>
+<noscript>&lt;img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=355751851552349&amp;amp;ev=PageView&amp;amp;noscript=1"&gt;</noscript>
+
+
+
+<!-- <script src="http://code.jquery.com/jquery.min.js"></script> -->
+<script src="./Prepare _ CodeChef_files/jquery.dataTables.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#certifications-schedule-table').DataTable({
+            "columns":[
+            {"width" : "50px"},
+            {"width" : "50px"},
+            {"width" : "200px"},
+            {"width" : "90px"},
+            {"width" : "90px"}
+            ],
+            paging: false
+        });
+    });
+</script>
+<script type="text/javascript">
+        _linkedin_data_partner_id = "93463";
+        </script><script type="text/javascript">
+        (function(){var s = document.getElementsByTagName("script")[0];
+        var b = document.createElement("script");
+        b.type = "text/javascript";b.async = true;
+        b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+        s.parentNode.insertBefore(b, s);})();
+        </script>
+        <noscript>
+        &lt;img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=93463&amp;fmt=gif" /&gt;
+        </noscript>
+<style>
+    .snackdown-bar{    
+    width: 970px;
+    margin: 0 auto 7px;
+    height: 40px;
+    position: relative;
+    top: 104px;
+    margin-top: 12px;
+  }
+  .snackdown-bar *{
+    box-sizing: border-box;
+  }</style>
+
+<div id="certification" class="widget seperate" data-bindattr-314="314" style="background: cornsilk; display: none; ">      <h4>Get CodeChef Certified. Get Hired.</h4>       <a target="_blank" href="https://www.codechef.com/certification/about?utm_source=recruitment&amp;utm_medium=contest&amp;utm_campaign=Directi%20Recruitment" data-bindattr-315="315" class="button blue fnone" style="      background: brown;  ">Know more</a>  </div>
+
+    <script>
+$(document).ready(function () {
+    var url_parts = window.location.pathname.split('/');
+    var hostname = window.location.hostname;
+    var is_valid_page = !(((url_parts.length >= 2 && url_parts[1] == 'signup') || //signup page
+                            (url_parts.length >= 2 && (url_parts[1] == 'node' || url_parts[1].trim() == '')) || //home page
+                            (url_parts[1] == 'admin') || //all admin pages
+                            hostname.indexOf('developers') == 0) || //
+                            (url_parts.length == 2 && url_parts[1] == 'DI17R143'));
+                            
+              //(url_parts.length >= 2 && url_parts[1] == 'certification') || //certification page
+                  
+
+    //console.log(is_valid_page);
+
+    if (is_valid_page) {
+        if ($('.header-container').length) {
+            $($('.snackdown-bar')).insertAfter($('.header-container'));
+        } else if ($('header.site').length) {
+            $($('.snackdown-bar')).insertAfter($('header.site'));
+            $('.snackdown-bar').css('top', '-15px');
+            $('.snackdown-bar').css('width', '964px');
+            $('.snackdown-bar > ul > li').css('top', '-3px');
+        }
+        $('#certification').hide();
+    }else{
+         $('.snackdown-bar').hide();
+         if(url_parts.length == 2 && url_parts[1] == 'DI17R143'){                
+                     showCCDSAPWidget();
+          }
+    }
+    
+    function showCCDSAPWidget(){
+        if($('#timer').length){
+            $('#certification').show();
+            $($('#certification')).insertBefore('#timer');
+        }else{
+           setTimeout(showCCDSAPWidget, 2000);
+        }
+    }
+});
+    </script>
+    <iframe name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" src="./Prepare _ CodeChef_files/rcj-99d43ead6bdf30da8ed5ffcb4f17100c.html" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe><script src="./Prepare _ CodeChef_files/saved_resource(4)" type="text/javascript"></script><div id="ads"></div></body><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span></html>

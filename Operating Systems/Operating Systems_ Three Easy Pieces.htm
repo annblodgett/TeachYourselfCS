@@ -1,0 +1,646 @@
+
+<!-- saved from url=(0052)http://pages.cs.wisc.edu/~remzi/OSTEP/#book-chapters -->
+<html class="gr__pages_cs_wisc_edu"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Operating Systems: Three Easy Pieces</title> 
+
+<script type="text/javascript" async="" src="./Operating Systems_ Three Easy Pieces_files/ga.js"></script><script type="text/javascript" async="" src="./Operating Systems_ Three Easy Pieces_files/ga.js"></script><script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-37746501-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript';
+    ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' :
+    'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-37746501-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript';
+    ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' :
+    'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+<script type="text/javascript" src="chrome-extension://aggiiclaiamajehmlfpkjmlbadmkledi/lib/popup.js" async=""></script><script type="text/javascript" src="chrome-extension://aggiiclaiamajehmlfpkjmlbadmkledi/lib/tat_popup.js" async=""></script></head> 
+
+<body text="black" bgcolor="white" link="#00aacc" vlink="#00aacc" alink="black" data-gr-c-s-loaded="true">
+
+<center>
+
+<p></p><p></p><p></p><p></p><p></p><a name="otherbooks"></a><a name="otherbooks2"></a><a name="acks"></a><p></p><table>
+
+<tbody><tr>
+<td width="1200pt">
+
+<center>
+<font color="#00aacc">
+<h2>Operating Systems: Three Easy Pieces</h2> 
+<h3><a href="http://www.cs.wisc.edu/~remzi">Remzi H. Arpaci-Dusseau</a> and <a href="http://www.cs.wisc.edu/~dusseau">Andrea C. Arpaci-Dusseau</a> </h3> 
+</font> 
+</center> 
+</td> 
+
+</tr> 
+
+<tr>
+<td width="1200pt">
+
+<p>
+</p><center>
+Blog: <a href="http://from-a-to-remzi.blogspot.com/2014/01/the-case-for-free-online-books-fobs.html">
+Why Textbooks Should Be Free</a> 
+</center> <p></p> 
+
+<p>
+</p><center>
+<small><b>Quick:</b> 
+<a href="http://pages.cs.wisc.edu/~remzi/OSTEP/#book-chapters">Free Book Chapters</a> -
+<a href="http://pages.cs.wisc.edu/~remzi/OSTEP/book-hardcover.html">Buy Hardcover</a> -
+<a href="http://pages.cs.wisc.edu/~remzi/OSTEP/book-softcover.html">Buy Softcover</a> -
+<a href="http://pages.cs.wisc.edu/~remzi/OSTEP/book-electronic.html">Buy PDF</a> -
+<a href="http://www.lulu.com/shop/stores.ep">Buy from EU</a> -
+<a href="https://pothi.com/pothi/book/remzi-h-arpaci-dusseau-operating-systems-three-easy-pieces-test-printing">Buy in India</a> -
+<a href="http://operating-systems-three-easy-pie.spreadshirt.com/">Buy T-shirt</a> -
+<a href="http://pages.cs.wisc.edu/~remzi/OSTEP/#donate">Donate</a> -
+<a href="http://pages.cs.wisc.edu/~remzi/OSTEP/#instructors">For Teachers</a> -
+<a href="http://pages.cs.wisc.edu/~remzi/OSTEP/#homework">Homework</a> -
+<a href="http://pages.cs.wisc.edu/~remzi/OSTEP/#news">News</a> -
+<a href="http://pages.cs.wisc.edu/~remzi/OSTEP/#acks">Acknowledgements</a> -
+<a href="http://pages.cs.wisc.edu/~remzi/OSTEP/#acks">Other Books</a> </small> 
+</center> <p></p> 
+
+<p>Welcome to <b>Operating Systems: Three Easy Pieces</b> (now version 0.91 -- see
+<a href="http://pages.cs.wisc.edu/~remzi/OSTEP/combined.html">book news</a> for details), a free online operating systems
+book! The book is centered around three conceptual pieces that are
+fundamental to operating systems: <b>virtualization,</b> <b>concurrency,</b> and <b>
+persistence.</b> In understanding the conceptual, you will also learn the
+practical, including how an operating system does things like schedule the
+CPU, manage memory, and store files persistently. Lots of fun stuff!</p> 
+
+<p>This book <b>is and will always be free</b> in PDF form, as seen below. For
+those of you wishing to <b>BUY</b> a copy, please consider the following:</p> 
+
+<a name="buy-book"></a><table>
+
+<tbody><tr>
+
+<td>
+<p><a href="http://pages.cs.wisc.edu/~remzi/OSTEP/book-hardcover.html"><img width="65" src="./Operating Systems_ Three Easy Pieces_files/book-cover-two.jpg"> </a> </p> 
+</td> 
+
+ 
+<td>
+<p>
+</p><ul>
+<li>A wonderful
+<a href="http://pages.cs.wisc.edu/~remzi/OSTEP/book-hardcover.html">hardcover edition (v0.91)</a> - this may be the best printed
+form of the book (it really looks pretty good), but it is also the most
+expensive way to obtain <i>the black book</i> of operating systems (a.k.a. <i>the
+comet book</i> or <i>the asteroid book</i> according to students). Now just: <b>$36.00</b> </li> 
+<li>An almost-as-wonderful (and somewhat cheaper)
+<a href="http://pages.cs.wisc.edu/~remzi/OSTEP/book-softcover.html">softcover edition (v0.91)</a> - this way is pretty great too,
+if you like to read printed material but want to save a few bucks. <b>NEW!</b> Now just:
+<b>$21.00</b> </li> 
+<li>A pretty awesome
+<a href="http://pages.cs.wisc.edu/~remzi/OSTEP/book-electronic.html">electronic edition (latest)</a> - this is a nice
+convenience and adds things like a hyperlinked table of contents, index of
+terms, lists of hints, tips, systems advice, and a few other things not seen
+in the free version, all in one massive DRM-free PDF. Just: <b>$10.00</b> </li> 
+<li>An alpha version for <a href="http://pages.cs.wisc.edu/~remzi/OSTEP/book-kindle.html">Kindle</a> - Really, this is
+just the PDF and does not (yet) include all the bells and whistles common in
+e-pub books.</li> 
+</ul> 
+<p></p> 
+</td> </tr> </tbody></table> 
+
+<table>
+<tbody><tr>
+<td>
+<p><b>Discount:</b> Save 10% on Print Books until February 19th with code BOOKSHIP18.</p> 
+</td> 
+</tr> 
+</tbody></table> 
+
+
+<a name="buy-tshirt"></a> 
+<p>Can't bear to go out in public without an operating system? How
+about an <a href="http://operating-systems-three-easy-pie.spreadshirt.com/">
+Operating Systems: Three Easy Pieces T-shirt</a> ?
+
+<a name="donate"></a> 
+</p><p><b>Donate:</b> By popular demand, another way to support this site and its
+contents: <b>donate!</b> Click to donate
+<a href="http://paypal.me/remziarpacidusseau/10">$10</a> -
+<a href="http://paypal.me/remziarpacidusseau/20">$20</a> -
+<a href="http://paypal.me/remziarpacidusseau/50">$50</a> -
+or click <a href="http://paypal.me/remziarpacidusseau">here</a> to donate any amount you
+want! Your donation helps keep this book going. Thanks!</p> 
+
+<p>Another way to help the book out: cite it! Here is the <a href="http://pages.cs.wisc.edu/~remzi/OSTEP/book.bib">
+BiBTeX entry (seen below);</a> you can also link to the site of the
+<a href="http://www.ostep.org/">best free operating systems book</a> on the market.</p> 
+
+<blockquote>
+<b>Operating Systems: Three Easy Pieces</b> <br> 
+Remzi H. Arpaci-Dusseau and Andrea C. Arpaci-Dusseau <br> 
+Arpaci-Dusseau Books <br> 
+March, 2015 (Version 0.90) <br> 
+</blockquote> 
+
+<p>
+<a name="book-chapters"></a> 
+And now, the free online form of the book, in chapter-by-chapter form (now with chapter numbers!):
+</p> 
+
+</td></tr><tr><td width="1000pt" valign="top">
+
+<center>
+<p>
+<table>
+
+<tbody><tr>
+
+<td bgcolor="yellow"><b>Intro</b> </td> 
+<td bgcolor="#f88017"><b>Virtualization</b> </td> 
+<td bgcolor="#f88017"><b></b> </td> 
+<td bgcolor="#00aacc"><b>Concurrency</b> </td> 
+<td bgcolor="#4CC417"><b>Persistence</b> </td> 
+<td bgcolor="#3EA99F"><b>Appendices</b> </td> 
+
+</tr> 
+
+
+<tr>
+
+<td bgcolor="yellow"><a href="http://pages.cs.wisc.edu/~remzi/OSTEP/preface.pdf" style="color:black">Preface</a> </td> 
+<td bgcolor="#f88017"><small>3</small> <i><a href="http://pages.cs.wisc.edu/~remzi/OSTEP/dialogue-virtualization.pdf" style="color:black">Dialogue</a> </i> </td> 
+<td bgcolor="#f88017"><small>12</small> <i><a href="http://pages.cs.wisc.edu/~remzi/OSTEP/dialogue-vm.pdf" style="color:black">Dialogue</a> </i> </td> 
+<td bgcolor="#00aacc"><small>25</small> <i><a href="http://pages.cs.wisc.edu/~remzi/OSTEP/dialogue-concurrency.pdf" style="color:black">Dialogue</a> </i> </td> 
+<td bgcolor="#4CC417"><small>35</small> <i><a href="http://pages.cs.wisc.edu/~remzi/OSTEP/dialogue-persistence.pdf" style="color:black">Dialogue</a> </i> </td> 
+<td bgcolor="#3EA99F"><a href="http://pages.cs.wisc.edu/~remzi/OSTEP/dialogue-vmm.pdf" style="color:black"><i>Dialogue</i> </a> </td> 
+
+</tr> 
+
+
+<tr>
+
+<td bgcolor="yellow"><a href="http://pages.cs.wisc.edu/~remzi/OSTEP/toc.pdf" style="color:black">TOC</a> </td> 
+<td bgcolor="#f88017"><small>4</small> <a href="http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf" style="color:black">Processes</a> </td> 
+<td bgcolor="#f88017"><small>13</small> <a href="http://pages.cs.wisc.edu/~remzi/OSTEP/vm-intro.pdf" style="color:black">Address Spaces</a> </td> 
+<td bgcolor="#00aacc"><small>26</small> <a href="http://pages.cs.wisc.edu/~remzi/OSTEP/threads-intro.pdf" style="color:black">Concurrency and Threads</a> <sup><a href="http://pages.cs.wisc.edu/~remzi/OSTEP/Code/code.threads-intro.tgz"><font color="black">code </font></a><font color="black"> </font></sup><font color="black"> </font></td> 
+<td bgcolor="#4CC417"><small>36</small> <a href="http://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf" style="color:black">I/O Devices</a> </td> 
+<td bgcolor="#3EA99F"><a href="http://pages.cs.wisc.edu/~remzi/OSTEP/vmm-intro.pdf" style="color:black">Virtual Machines</a> </td> 
+
+</tr> 
+
+
+<tr>
+
+<td bgcolor="yellow"><small>1</small> <i><a href="http://pages.cs.wisc.edu/~remzi/OSTEP/dialogue-threeeasy.pdf" style="color:black">Dialogue</a> </i> </td> 
+<td bgcolor="#f88017"><small>5</small> <a href="http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-api.pdf" style="color:black">Process API</a> <sup><a href="http://pages.cs.wisc.edu/~remzi/OSTEP/Code/code.cpu-api.tgz"><font color="black">code </font></a><font color="black"> </font></sup><font color="black"> </font></td> 
+<td bgcolor="#f88017"><small>14</small> <a href="http://pages.cs.wisc.edu/~remzi/OSTEP/vm-api.pdf" style="color:black">Memory API</a> </td> 
+<td bgcolor="#00aacc"><small>27</small> <a href="http://pages.cs.wisc.edu/~remzi/OSTEP/threads-api.pdf" style="color:black">Thread API</a> </td> 
+<td bgcolor="#4CC417"><small>37</small> <a href="http://pages.cs.wisc.edu/~remzi/OSTEP/file-disks.pdf" style="color:black">Hard Disk Drives</a> </td> 
+<td bgcolor="#3EA99F"><a href="http://pages.cs.wisc.edu/~remzi/OSTEP/dialogue-monitors.pdf" style="color:black"><i>Dialogue</i> </a> </td> 
+
+</tr> 
+
+
+<tr>
+
+<td bgcolor="yellow"><small>2</small> <a href="http://pages.cs.wisc.edu/~remzi/OSTEP/intro.pdf" style="color:black">Introduction</a> <sup><a href="http://pages.cs.wisc.edu/~remzi/OSTEP/Code/code.intro.tgz"><font color="black">code </font></a><font color="black"> </font></sup><font color="black"> </font></td> 
+<td bgcolor="#f88017"><small>6</small> <a href="http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-mechanisms.pdf" style="color:black">Direct Execution</a> </td> 
+<td bgcolor="#f88017"><small>15</small> <a href="http://pages.cs.wisc.edu/~remzi/OSTEP/vm-mechanism.pdf" style="color:black">Address Translation</a> </td> 
+<td bgcolor="#00aacc"><small>28</small> <a href="http://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks.pdf" style="color:black">Locks</a> </td> 
+<td bgcolor="#4CC417"><small>38</small> <a href="http://pages.cs.wisc.edu/~remzi/OSTEP/file-raid.pdf" style="color:black">Redundant Disk Arrays (RAID)</a> </td> 
+<td bgcolor="#3EA99F"><a href="http://pages.cs.wisc.edu/~remzi/OSTEP/threads-monitors.pdf" style="color:black">Monitors</a> </td> 
+
+</tr> 
+
+
+<tr>
+
+<td bgcolor="yellow"></td> 
+<td bgcolor="#f88017"><small>7</small> <a href="http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf" style="color:black">CPU Scheduling</a> </td> 
+<td bgcolor="#f88017"><small>16</small> <a href="http://pages.cs.wisc.edu/~remzi/OSTEP/vm-segmentation.pdf" style="color:black">Segmentation</a> </td> 
+<td bgcolor="#00aacc"><small>29</small> <a href="http://pages.cs.wisc.edu/~remzi/OSTEP/threads-locks-usage.pdf" style="color:black">Locked Data Structures</a> </td> 
+<td bgcolor="#4CC417"><small>39</small> <a href="http://pages.cs.wisc.edu/~remzi/OSTEP/file-intro.pdf" style="color:black">Files and Directories</a> </td> 
+<td bgcolor="#3EA99F"><a href="http://pages.cs.wisc.edu/~remzi/OSTEP/dialogue-labs.pdf" style="color:black"><i>Dialogue</i> </a> </td> 
+
+</tr> 
+
+
+<tr>
+
+<td bgcolor="yellow"></td> 
+<td bgcolor="#f88017"><small>8</small> <a href="http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-mlfq.pdf" style="color:black">Multi-level Feedback</a> </td> 
+<td bgcolor="#f88017"><small>17</small> <a href="http://pages.cs.wisc.edu/~remzi/OSTEP/vm-freespace.pdf" style="color:black">Free Space Management</a> </td> 
+<td bgcolor="#00aacc"><small>30</small> <a href="http://pages.cs.wisc.edu/~remzi/OSTEP/threads-cv.pdf" style="color:black">Condition Variables</a> </td> 
+<td bgcolor="#4CC417"><small>40</small> <a href="http://pages.cs.wisc.edu/~remzi/OSTEP/file-implementation.pdf" style="color:black">File System Implementation</a> </td> 
+<td bgcolor="#3EA99F"><a href="http://pages.cs.wisc.edu/~remzi/OSTEP/lab-tutorial.pdf" style="color:black">Lab Tutorial</a> </td> 
+
+</tr> 
+
+
+<tr>
+
+<td bgcolor="yellow"></td> 
+<td bgcolor="#f88017"><small>9</small> <a href="http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-lottery.pdf" style="color:black">Lottery Scheduling</a> <sup><a href="http://pages.cs.wisc.edu/~remzi/OSTEP/Code/code.cpu-sched-lottery.tgz"><font color="black">code </font></a><font color="black"> </font></sup><font color="black"> </font></td> 
+<td bgcolor="#f88017"><small>18</small> <a href="http://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf" style="color:black">Introduction to Paging</a> </td> 
+<td bgcolor="#00aacc"><small>31</small> <a href="http://pages.cs.wisc.edu/~remzi/OSTEP/threads-sema.pdf" style="color:black">Semaphores</a> </td> 
+<td bgcolor="#4CC417"><small>41</small> <a href="http://pages.cs.wisc.edu/~remzi/OSTEP/file-ffs.pdf" style="color:black">Fast File System (FFS)</a> </td> 
+<td bgcolor="#3EA99F"><a href="http://pages.cs.wisc.edu/~remzi/OSTEP/lab-projects-systems.pdf" style="color:black">Systems Labs</a> </td> 
+
+</tr> 
+
+
+<tr>
+
+<td bgcolor="yellow"></td> 
+<td bgcolor="#f88017"><small>10</small> <a href="http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-multi.pdf" style="color:black">Multi-CPU Scheduling</a> </td> 
+<td bgcolor="#f88017"><small>19</small> <a href="http://pages.cs.wisc.edu/~remzi/OSTEP/vm-tlbs.pdf" style="color:black">Translation Lookaside Buffers</a> </td> 
+<td bgcolor="#00aacc"><small>32</small> <a href="http://pages.cs.wisc.edu/~remzi/OSTEP/threads-bugs.pdf" style="color:black">Concurrency Bugs</a> </td> 
+<td bgcolor="#4CC417"><small>42</small> <a href="http://pages.cs.wisc.edu/~remzi/OSTEP/file-journaling.pdf" style="color:black">FSCK and Journaling</a> </td> 
+<td bgcolor="#3EA99F"><a href="http://pages.cs.wisc.edu/~remzi/OSTEP/lab-projects-xv6.pdf" style="color:black">xv6 Labs</a> </td> 
+
+</tr> 
+
+
+<tr>
+
+<td bgcolor="yellow"></td> 
+<td bgcolor="#f88017"><small>11</small> <i><a href="http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-dialogue.pdf" style="color:black">Summary</a> </i> </td> 
+<td bgcolor="#f88017"><small>20</small> <a href="http://pages.cs.wisc.edu/~remzi/OSTEP/vm-smalltables.pdf" style="color:black">Advanced Page Tables</a> </td> 
+<td bgcolor="#00aacc"><small>33</small> <a href="http://pages.cs.wisc.edu/~remzi/OSTEP/threads-events.pdf" style="color:black">Event-based Concurrency</a> </td> 
+<td bgcolor="#4CC417"><small>43</small> <a href="http://pages.cs.wisc.edu/~remzi/OSTEP/file-lfs.pdf" style="color:black">Log-structured File System (LFS)</a> </td> 
+<td bgcolor="#3EA99F"></td> 
+
+</tr> 
+
+
+<tr>
+
+<td bgcolor="yellow"></td> 
+<td bgcolor="#f88017"></td> 
+<td bgcolor="#f88017"><small>21</small> <a href="http://pages.cs.wisc.edu/~remzi/OSTEP/vm-beyondphys.pdf" style="color:black">Swapping: Mechanisms</a> </td> 
+<td bgcolor="#00aacc"><small>34</small> <i><a href="http://pages.cs.wisc.edu/~remzi/OSTEP/threads-dialogue.pdf" style="color:black">Summary</a> </i> </td> 
+<td bgcolor="#4CC417"><small>44</small> <a href="http://pages.cs.wisc.edu/~remzi/OSTEP/file-ssd.pdf" style="color:black">Flash-based SSDs</a> </td> 
+<td bgcolor="#3EA99F"></td> 
+
+</tr> 
+
+
+<tr>
+
+<td bgcolor="yellow"></td> 
+<td bgcolor="#f88017"></td> 
+<td bgcolor="#f88017"><small>22</small> <a href="http://pages.cs.wisc.edu/~remzi/OSTEP/vm-beyondphys-policy.pdf" style="color:black">Swapping: Policies</a> </td> 
+<td bgcolor="#00aacc"></td> 
+<td bgcolor="#4CC417"><small>45</small> <a href="http://pages.cs.wisc.edu/~remzi/OSTEP/file-integrity.pdf" style="color:black">Data Integrity and Protection</a> </td> 
+<td bgcolor="#3EA99F"></td> 
+
+</tr> 
+
+
+<tr>
+
+<td bgcolor="yellow"></td> 
+<td bgcolor="#f88017"></td> 
+<td bgcolor="#f88017"><small>23</small> <a href="http://pages.cs.wisc.edu/~remzi/OSTEP/vm-vax.pdf" style="color:black">Case Study: VAX/VMS</a> </td> 
+<td bgcolor="#00aacc"></td> 
+<td bgcolor="#4CC417"><small>46</small> <i><a href="http://pages.cs.wisc.edu/~remzi/OSTEP/file-dialogue.pdf" style="color:black">Summary</a> </i> </td> 
+<td bgcolor="#3EA99F"></td> 
+
+</tr> 
+
+
+<tr>
+
+<td bgcolor="yellow"></td> 
+<td bgcolor="#f88017"></td> 
+<td bgcolor="#f88017"><small>24</small> <i><a href="http://pages.cs.wisc.edu/~remzi/OSTEP/vm-dialogue.pdf" style="color:black">Summary</a> </i> </td> 
+<td bgcolor="#00aacc"></td> 
+<td bgcolor="#4CC417"><small>47</small> <i><a href="http://pages.cs.wisc.edu/~remzi/OSTEP/dialogue-distribution.pdf" style="color:black">Dialogue</a> </i> </td> 
+<td bgcolor="#3EA99F"></td> 
+
+</tr> 
+
+
+<tr>
+
+<td bgcolor="yellow"></td> 
+<td bgcolor="#f88017"></td> 
+<td bgcolor="#f88017"></td> 
+<td bgcolor="#00aacc"></td> 
+<td bgcolor="#4CC417"><small>48</small> <a href="http://pages.cs.wisc.edu/~remzi/OSTEP/dist-intro.pdf" style="color:black">Distributed Systems</a> </td> 
+<td bgcolor="#3EA99F"></td> 
+
+</tr> 
+
+
+<tr>
+
+<td bgcolor="yellow"></td> 
+<td bgcolor="#f88017"></td> 
+<td bgcolor="#f88017"></td> 
+<td bgcolor="#00aacc"></td> 
+<td bgcolor="#4CC417"><small>49</small> <a href="http://pages.cs.wisc.edu/~remzi/OSTEP/dist-nfs.pdf" style="color:black">Network File System (NFS)</a> </td> 
+<td bgcolor="#3EA99F"></td> 
+
+</tr> 
+
+
+<tr>
+
+<td bgcolor="yellow"></td> 
+<td bgcolor="#f88017"></td> 
+<td bgcolor="#f88017"></td> 
+<td bgcolor="#00aacc"></td> 
+<td bgcolor="#4CC417"><small>50</small> <a href="http://pages.cs.wisc.edu/~remzi/OSTEP/dist-afs.pdf" style="color:black">Andrew File System (AFS)</a> </td> 
+<td bgcolor="#3EA99F"></td> 
+
+</tr> 
+
+
+<tr>
+
+<td bgcolor="yellow"></td> 
+<td bgcolor="#f88017"></td> 
+<td bgcolor="#f88017"></td> 
+<td bgcolor="#00aacc"></td> 
+<td bgcolor="#4CC417"><small>51</small> <i><a href="http://pages.cs.wisc.edu/~remzi/OSTEP/dist-dialogue.pdf" style="color:black">Summary</a> </i> </td> 
+<td bgcolor="#3EA99F"></td> 
+
+</tr> 
+
+</tbody></table> 
+
+</p> 
+</center> 
+
+</td> </tr> 
+
+<tr><td width="1200pt" valign="top"></td> </tr> 
+ 
+
+<tr><td width="1200pt" valign="top">
+
+<a name="instructors"></a> 
+<p><b>INSTRUCTORS:</b> If you are using these free chapters, <b>please just link to
+them directly</b> (instead of making a copy locally); we make little improvements
+frequently and thus would like to provide the latest to whomever is using it.
+Also: we have made our own class-preparation notes available to those of you
+teaching from this book; please drop us a line at <b>remzi@cs.wisc.edu</b> if you
+are interested.</p> 
+
+</td> </tr> 
+
+<tr><td width="1200pt" valign="top"></td> </tr> 
+ 
+
+<tr><td width="1200pt" valign="top">
+
+<a name="homework"></a> 
+<p><b>HOMEWORKS:</b> Some of the chapters have homeworks at the end, which
+require simulators and other code. More details on that, including how to find
+said code, can be found here: <a href="http://pages.cs.wisc.edu/~remzi/OSTEP/Homework/homework.html">HOMEWORK</a> </p> 
+
+</td> </tr> 
+
+<tr><td width="1200pt" valign="top"></td> </tr> 
+ 
+
+<tr><td width="1200pt" valign="top">
+
+<a name="news"></a> 
+<p><b>BOOKS NEWS:</b> A huge number of pictures added, chapters completed,
+and other fun details in the latest stable version, 0.91. Track changes: <a href="http://pages.cs.wisc.edu/~remzi/OSTEP/combined.html">NEWS</a> </p> 
+
+</td></tr><tr><td width="1200pt" valign="top"></td> </tr> 
+ 
+
+<tr><td width="1200pt" valign="top">
+
+<a name="acks"></a> 
+<p><b>ACKNOWLEDGEMENTS:</b> These students have greatly contributed to this
+effort, through endless bug reports and other comments. Your name could go
+here! (as well as in the printed book): <a href="http://pages.cs.wisc.edu/~remzi/OSTEP/combined.html">ERRATA</a> </p> 
+</td> </tr> 
+
+<tr><td width="1200pt" valign="top"></td> </tr> 
+ 
+
+ 
+<tr><td width="1200pt" valign="top">
+<p><b>OTHER SYSTEMS BOOKS:</b> Interested in other systems books? Good!
+Of course, we assume some background in <a href="http://www.amazon.com/gp/product/0131103628/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0131103628&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=RI2L6WG3HGZM2GXG">The C Programming Language</a><img src="./Operating Systems_ Three Easy Pieces_files/ir" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">, so that's a good investment. And <a href="http://www.amazon.com/gp/product/0321637739/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0321637739&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=4HWBBZINQQWXE53A">Advanced Programming in the UNIX Environment</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(1)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;"> is a must for any shelf. On top of that, here are some OS books that could be worth your time:
+<a href="http://www.amazon.com/gp/product/0985673524/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0985673524&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=POFASX37S5VWSIEH">Operating Systems: Principles and Practice</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(2)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/1118063333/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1118063333&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=R2SFV7DSLZB2QQIU">Operating System Concepts</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(3)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0133805913/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0133805913&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=EODT5LXEBGLNAEDN">Operating Systems: Internals and Design Principles (8th Edition)</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(4)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/013359162X/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=013359162X&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=2ERIFG4YNEB5EBGA">Modern Operating Systems (4th Edition)</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(5)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0672329468/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0672329468&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=MGLA6JQCCPYZGUAH">Linux Kernel Development (3rd Edition)</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(6)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0596005652/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0596005652&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=ZHXHBDHWWOM2RNT7">Understanding the Linux Kernel</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(7)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0321968972/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0321968972&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=6MY3PGOP3Q2QMRRV">The Design and Implementation of the FreeBSD Operating System</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(8)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0131482092/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0131482092&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=XWTFSOQ7HUINMGJ7">Solaris Internals: Solaris 10 and OpenSolaris Kernel Architecture</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(9)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0321278542/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0321278542&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=H33SAF42MNIRYKV5">Mac OS X Internals: A Systems Approach</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(10)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0132017997/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0132017997&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=B3OSA2URU2K3RIJ3">The Design of the UNIX Operating System</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(11)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="https://www.amazon.com/gp/product/1482233584/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1482233584&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=f54001cddb37a437a0d9781fb7442e6e">UNIX: The Textbook</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(12)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/1593272200/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1593272200&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=Y2R2H2YXMB3TI6PO">The Linux Programming Interface: A Linux and UNIX System Programming Handbook</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(13)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">.
+</p> </td> 
+
+ 
+</tr><tr><td width="1200pt" valign="top">
+<p><b>OTHER BOOKS:</b> So you're looking down here? Well, how about reading something other than tech books all day long? Honestly, you need to be more balanced. Here are some awesome books you should most definitely read. <small>Fiction:
+<a href="http://www.amazon.com/gp/product/0375507256/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0375507256&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=ZKZAMFQCTL7SZ3KR">Cloud Atlas: A Novel</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(14)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0156027321/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0156027321&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=DCVISEJESZUDI5GF">Life of Pi</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(15)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0062204092/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0062204092&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=EUZKNMY6PPYANPEK">A Prayer for Owen Meany: A Novel</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(16)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/1476746583/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1476746583&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=HUYV4U64776LR6FB">All the Light We Cannot See</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(17)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0375842209/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0375842209&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=X67UQJXUD6RCI5T5">The Book Thief</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(18)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/014242417X/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=014242417X&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=E7JAOXWAMKPGSEB2">The Fault in Our Stars</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(19)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0812984250/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0812984250&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=63XH2LT6KCJXHDC5">Tenth of December: Stories</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(20)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0385491204/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0385491204&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=J3OD3MXBDFGP7FOW">If I Don't Six</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(21)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0553593714/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0553593714&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=ZAYNNMPXWOQ45CG3">A Game of Thrones</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(22)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0446310786/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0446310786&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=DR72JNDRE3IZWMR2">To Kill a Mockingbird</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(23)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/159463193X/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=159463193X&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=NP3ABJBE6ZLRFZRO">The Kite Runner</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(24)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0812550706/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0812550706&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=TUXVKMYJBOWFQ6GI">Ender's Game</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(25)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0553293354/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0553293354&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=BZRQNNMXD6BFTQRF">Foundation</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(26)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0440180295/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0440180295&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=E7N2DABAVHT6MXT3">Slaughterhouse-Five</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(27)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0143034901/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0143034901&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=BSPDO76HKZB5LT4W">The Shadow of the Wind</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(28)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0156030306/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0156030306&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=XU3EKPFEOI6ULFAR">Flowers for Algernon</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(29)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0440414806/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0440414806&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=CLPO7NMAVGGTNI7C">Holes</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(30)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/038572179X/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=038572179X&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=ZRFZTJEPNC2BCWIN">Atonement</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(31)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0756404746/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0756404746&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=MFUPAT7DB3ID2TVG">The Name of the Wind</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(32)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/1400033411/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1400033411&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=QI6FFIOEP7YK5C6R">Beloved</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(33)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0684803356/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0684803356&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=QILLNCSDWW7NM2GF">For Whom the Bell Tolls</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(34)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0451167538/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0451167538&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=S2SO354RYWWOH6MJ">Different Seasons</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(35)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0441569595/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0441569595&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=BXUPQGVZQDL6SNFH">Neuromancer</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(36)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0553380958/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0553380958&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=7L2HQZ5USYCUPIZZ">Snow Crash</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(37)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0060512806/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0060512806&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=TKMYZAAGUV6VU3KF">Cryptonomicon</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(38)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0312330537/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0312330537&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=XDUPUXQUV6QOC6TP">Shantaram</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(39)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/1482694573/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1482694573&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=QMZYOO6EJR34HFSH">A Room with a View</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(40)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0486452433/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0486452433&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=OIDTUB73NH5CWWKJ">Jude the Obscure</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(41)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0099427869/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0099427869&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=ZTNT7TLXPZLP3YTX">Illusions: The Adventures of a Reluctant Messiah</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(42)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0060892994/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0060892994&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=OR3U64T2O6OOET2P">A Canticle for Leibowitz</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(43)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0547773749/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0547773749&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=KY5VBA26NSCNYG4I">A Wizard of Earthsea</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(44)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0812974018/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0812974018&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=B4ASBCYQZR2FE2V4">Black Swan Green</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(45)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/1876963468/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1876963468&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=TRC25Z25YDU3TGVE">The Stars My Destination</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(46)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/031624662X/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=031624662X&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=AWAQS2EEBXDJKV4W">Ancillary Justice</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(47)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/1609450787/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1609450787&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=ZG7EZNINJKMGDIZL">My Brilliant Friend</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(48)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/037575931X/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=037575931X&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=DAJ6DDTEWZSPV377">Crossing to Safety</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(49)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0679735909/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0679735909&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=SKHEFHUKOXPBURGF">Possession</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(50)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0143117351/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0143117351&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=57FHOLM4SLTAFU3R">The Selected Works of T.S. Spivet</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(51)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0962344745/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0962344745&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=3L5G7AWS725R3OGQ">Essential Ellison</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(52)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/1596879882/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1596879882&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=FXUCKXUNNH56MWBD">The Demolished Man</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(53)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+
+
+
+Non-fiction:
+<a href="http://www.amazon.com/gp/product/0449005615/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0449005615&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=TBQJLHAW3ST6Y7K4">Seabiscuit: An American Legend</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(54)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0812974492/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0812974492&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=2RNXXOEYURHDPRYW">Unbroken</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(55)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0393316041/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0393316041&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=2ZT7ZYLZEUPGQXVM">Surely You're Joking, Mr. Feynman!</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(56)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0805078533/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0805078533&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=4OVFNPZCWBSSWRTW">On Intelligence</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(57)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0061336467/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0061336467&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=4F2UE5N3ZVWMVBKJ">The Language Instinct</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(58)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0061339202/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0061339202&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=AUNYVHELQZUQQWEI">Flow</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(59)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0393317552/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0393317552&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=GISBBEVE2RUIGPYG">Guns, Germs, and Steel</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(60)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0199291152/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0199291152&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=6NCHRWJZW24PV5XO">The Selfish Gene</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(61)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0375725784/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0375725784&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=UDMG7GKIKQST3KJE">A Heartbreaking Work of Staggering Genius</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(62)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0743296281/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0743296281&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=DZOMLI4INDEJ22FR">Lies My Teacher Told Me</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(63)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0060731338/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0060731338&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=FAA3MI6HFRE3T5IS">Freakonomics</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(64)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0385418493/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0385418493&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=RBJZ6VWF6GCQ7GDM">How the Irish Saved Civilization</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(65)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0140275010/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0140275010&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=U3HIG4I3BZMEKLJ2">Cod</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(66)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0375725601/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0375725601&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=TXNICNDRY7INUZTQ">The Devil in the White City</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(67)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0393343405/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0393343405&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=3LQOCO3VMY3EALMA">The Swerve: How the World Became Modern</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(68)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0307275175/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0307275175&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=E6LOGFEIWQKDFHCL">The Drunkard's Walk</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(69)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0961392142/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0961392142&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=J7IF4P4ER3NMGP53">The Visual Display of Quantitative Information</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(70)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/1592402038/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1592402038&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=BBGKEIX3M7SRN7GM">Eats, Shoots &amp; Leaves</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(71)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/020530902X/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=020530902X&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=WHRCF5SAP7NDMGZQ">The Elements of Style</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(72)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0465067107/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0465067107&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=NSXWP7LMX65XSTPW">The Design of Everyday Things</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(73)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0812980557/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0812980557&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=6VSP3WPAQNHBL3PU">Mountains Beyond Mountains</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(74)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0316491977/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0316491977&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=4A4IJMCTYKYP5LGP">The Soul of A New Machine</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(75)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/069116472X/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=069116472X&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=5T6AXIPMGOWEUJHX">Alan Turing: The Enigma</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(76)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0316013323/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0316013323&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=YSNPSOPXUODWNN3R">Consider the Lobster</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(77)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+-
+<a href="http://www.amazon.com/gp/product/0679728058/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0679728058&amp;linkCode=as2&amp;tag=opesysthrea0a-20&amp;linkId=YLI7SXJYHMHA6SCU">The Vintage Guide to Classical Music</a><img src="./Operating Systems_ Three Easy Pieces_files/ir(78)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+
+</small> 
+
+</p> </td> 
+
+ </tr><tr><td width="1200pt" valign="top"><p><b>ACKS:</b> The
+authors wish to acknowledge all the sources of funding for their research over
+the years. In particular, the authors appreciate the strong support from the
+<a href="http://www.nsf.gov/">National Science Foundation (NSF),</a> which is an
+essential part of the modern research and educational infrastructure of the
+USA.
+
+</p> </td> </tr> 
+
+<tr><td width="1200pt" valign="top"><p>.</p> </td> </tr> 
+
+
+ 
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</tbody></table></center></body><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span></html>
